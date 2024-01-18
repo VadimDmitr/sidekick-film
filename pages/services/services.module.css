@@ -1,0 +1,29 @@
+/* pages/services.module.css */
+.servicesContainer {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px; /* Set a max-width for the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceItem {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 100%; /* Full width by default */
+  text-align: center;
+}
+
+/* Responsive styling for larger screens */
+@media (min-width: 600px) {
+  .servicesContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .serviceItem {
+    width: 30%; /* Adjust the width for larger screens */
+  }
+}

@@ -5,10 +5,10 @@ import Head from 'next/head';
 const Contact = () => {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Contact Us</title>
         <meta name="description" content="Contact us for more information" />
-      </Head>
+      </Head> */}
       <h1>Contact Us</h1>
       <form>
         <label htmlFor="name">Name:</label>
