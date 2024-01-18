@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import './globals.css';
 import Header from '../../components/header';
-//  import Client from '../../pages/client';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
       <Head>
         <title>My App</title>
       </Head>
-      {/* Do not include <html> or <body> tags here */}
       <div className="container">
       <Header />
         {children}
