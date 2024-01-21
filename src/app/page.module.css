@@ -10,7 +10,7 @@
 /* page.module.css */
 .backgroundImageContainer {
   margin: 0rem 0rem 2rem 0rem;
-  background-image: url('/mainPage1.jpg'); /* the path as necessary */
+  background-image: url('/mainPage1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

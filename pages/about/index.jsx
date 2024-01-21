@@ -10,7 +10,7 @@ export default function About() {
       </Head>
       <h1>About Us</h1>
       <p>This is the about page where you can learn more about our company.</p>
-      {/* more content about company */}
+      {/* more content about the company */}
     </div>
   );
 }

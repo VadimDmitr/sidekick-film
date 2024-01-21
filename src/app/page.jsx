@@ -15,9 +15,9 @@ export default function Home() {
       </section>
       <section id="about" className={styles.section}>
         <h2>About Us</h2>
-        {/* Content about your company */}
+        {/* Content about the company */}
       </section>
-      {/* Repeat sections for additional content */}
+      {/* Sections for additional content */}
       {/* ... */}
     </>
   );
