@@ -1,3 +1,14 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals"
+    // "plugin:@typescript-eslint/recommended" // Include TypeScript ESLint recommended rules
+  ],
+  "plugins": [
+    "prettier" // Add Prettier as a plugin
+  ],
+  "rules": {
+    "no-console": "error",
+    "prefer-destructuring": "error", // Enforce using destructuring when possible
+    "prettier/prettier": "error" // Add the Prettier rule
+  }
 }
