@@ -1,4 +1,4 @@
-import Head from 'next/head';
+// import Head from 'next/head';
 import styles from './services.module.css'; // This will be your CSS module for styling
 
 export default function Services() {
