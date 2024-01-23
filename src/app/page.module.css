@@ -21,15 +21,14 @@
 }
 
 .welcomeTitle {
-  color: white; 
-  font-size: 4rem; 
+  color: white;
+  font-size: 4rem;
   text-align: center;
 }
 
-.section { 
- padding: 50px 20px; /*padding to sections */
+.section {
+  padding: 50px 20px; /*padding to sections */
 }
- 
 
 .description {
   display: inherit;
@@ -75,7 +74,9 @@
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  transition:
+    background 200ms,
+    border 200ms;
 }
 
 .card span {
@@ -250,4 +251,4 @@
   to {
     transform: rotate(0deg);
   }
-} 
+}

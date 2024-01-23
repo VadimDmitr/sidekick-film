@@ -1,5 +1,5 @@
 // components/ScrollButton.client.js
-"use client";
+'use client';
 
 const ScrollButton = ({ sectionId, children }) => {
   const scrollToSection = () => {
@@ -7,11 +7,7 @@ const ScrollButton = ({ sectionId, children }) => {
     section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  return (
-    <button onClick={scrollToSection}>
-      {children}
-    </button>
-  );
+  return <button onClick={scrollToSection}>{children}</button>;
 };
 
 export default ScrollButton;
