@@ -1,6 +1,4 @@
-/* Header.module.css */
 .header {
-  /* margin: 0px 10px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,18 +29,16 @@
   background-color: #555;
 }
 
-/* Hide the menu button on desktop screens */
 .menubutton {
   display: none;
 }
 
-/* Styles for mobile devices */
 @media (max-width: 600px) {
   .nav {
-    display: none; /* Hide navigation on mobile */
+    display: none;
   }
 
   .menu-button {
-    display: block; /* Show menu button on mobile */
+    display: block;
   }
 }
