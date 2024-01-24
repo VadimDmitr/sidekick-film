@@ -1,9 +1,5 @@
-/* pages/services.module.css */
 .servicesContainer {
   padding: 20px;
-  /* margin: 2rem 0rem; */
-  /* max-width: 800px; Set a max-width for the content */
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,7 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   color: #fff;
 }
 
@@ -27,27 +23,20 @@
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
-  width: 100%; /* Full width by default */
+  width: 100%;
   text-align: center;
 }
 
 .serviceDescription {
-  /* Styling for service description paragraphs */
   font-size: 1rem;
   color: #fff;
   font-size: 1.25rem;
   font-weight: bold;
-  /* max-width: 1000px;  */
-  margin: 1rem 20rem; /* Space below each paragraph */
+  margin: 1rem 20rem;
   justify-content: center;
   align-items: center;
 }
 
-/* .servicesLinks { */
-/* Container for service links, if you want to style it */
-/* } */
-
-/* Responsive styling for larger screens */
 @media (min-width: 600px) {
   .servicesContainer {
     flex-direction: row;
@@ -55,6 +44,6 @@
   }
 
   .serviceItem {
-    width: 30%; /* Adjust the width for larger screens */
+    width: 30%;
   }
 }

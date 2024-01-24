@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" />
       </head>
       <body className={inter.className} suppressHydrationWarning={true}>
-        <div
-        >
+        <div>
           <Header />
           <main>
             {children}
