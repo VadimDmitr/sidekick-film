@@ -17,11 +17,11 @@ export default function Services() {
         comprehensive suite of services to meet all your video needs.
       </p>
       <p className={styles.serviceDescription}>
-        Whether you're looking to promote your brand, cover a special event, or
-        produce educational content, our state-of-the-art equipment and skilled
-        professionals are at your service. We understand the power of visual
-        storytelling and strive to create content that not only looks great but
-        also communicates your message effectively.
+        Whether you&apos;re looking to promote your brand, cover a special
+        event, or produce educational content, our state-of-the-art equipment
+        and skilled professionals are at your service. We understand the power
+        of visual storytelling and strive to create content that not only looks
+        great but also communicates your message effectively.
       </p>
       <p className={styles.serviceDescription}>
         Our services include corporate videos, commercial advertisements,
