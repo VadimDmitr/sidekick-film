@@ -1,6 +1,6 @@
 // import Link from 'next/link';
 import styles from './page.module.css';
-import Services from '../../pages/services';
+// import Services from './components/Services';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className={styles.welcomeTitle}>Welcome to Our Website</h1>
       </div>
       <section>
-        <Services />
+        {/* <Services /> */}
         {/* <Link href="/services" className={styles.serviceLink}>Services</Link> */}
         {/*additional services with corresponding links */}
       </section>
