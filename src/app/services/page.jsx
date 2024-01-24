@@ -1,13 +1,8 @@
-// import Head from 'next/head';
-import styles from './services.module.css'; // This will be your CSS module for styling
+import styles from './styles.module.css';
 
 export default function Services() {
   return (
     <div className={styles.servicesContainer}>
-      {/* <Head>
-        <title className={styles.title}>Our Services</title>
-        <meta name="description" content="Explore our services" />
-      </Head> */}
       <h1 className={styles.serviceTitle}>Our Services</h1>
       <p className={styles.serviceDescription}>
         At SideKick Film Co., we are dedicated to bringing stories to life
