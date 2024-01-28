@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.backgroundImageContainer}>
         <h1 className={styles.welcomeTitle}>Welcome to Our Website</h1>
       </div>
-      <section id="about" className={styles.section}>
+      <section className={styles.section}>
         <Services />
         <About />
         <Contact />
