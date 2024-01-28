@@ -11,13 +11,7 @@ const Contact = () => {
     <div id="contact" className={styles.contact}>
       <h1>Contact Us</h1>
       <p>
-        <strong>Phone:</strong>
-        <a href="tel:19196694879" className={styles.contactLink}>
-          +1 919-669-4879
-        </a>{' '}
-      </p>
-      <p>
-        <strong>Address:</strong>
+        <strong>Address: </strong>
         <a
           href={googleMapsUrl}
           target="_blank"
@@ -25,6 +19,21 @@ const Contact = () => {
           className={styles.contactLink}
         >
           300 S Dixon Ave, Cary, NC 27511
+        </a>
+      </p>
+      <p>
+        <strong>Phone: </strong>
+        <a href="tel:19196694879" className={styles.contactLink}>
+          +1 919-669-4879
+        </a>{' '}
+      </p>
+      <p>
+        <strong>Email: </strong>
+        <a
+          href={`mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+          className={styles.contactLink}
+        >
+          {emailTo}
         </a>
       </p>
 

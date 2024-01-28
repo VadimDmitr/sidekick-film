@@ -8,18 +8,21 @@ const Header = () => {
         Logo
       </Link>
       <nav className={styles.nav}>
-        <Link href="/" className={styles.navlink}>
+        {/* <Link href="/" className={styles.navlink}>
           Home
-        </Link>
+        </Link> */}
         <a href="#services" className={styles.navlink}>
           Services
         </a>
         <a href="#about" className={styles.navlink}>
           About
         </a>
-        <a href="#contact" className={styles.navlink}>
+        {/* <a href="#contact" className={styles.navlink}>
           Contact
-        </a>
+        </a> */}
+        <Link href="/contact" className={styles.navlink}>
+          Contact
+        </Link>
       </nav>
       <button className={styles.menubutton}>Menu</button>
     </header>
