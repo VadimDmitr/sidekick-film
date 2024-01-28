@@ -11,15 +11,15 @@ const Header = () => {
         <Link href="/" className={styles.navlink}>
           Home
         </Link>
-        <Link href="/services" className={styles.navlink}>
+        <a href="#services" className={styles.navlink}>
           Services
-        </Link>
-        <Link href="/about" className={styles.navlink}>
+        </a>
+        <a href="#about" className={styles.navlink}>
           About
-        </Link>
-        <Link href="/contact" className={styles.navlink}>
+        </a>
+        <a href="#contact" className={styles.navlink}>
           Contact
-        </Link>
+        </a>
       </nav>
       <button className={styles.menubutton}>Menu</button>
     </header>

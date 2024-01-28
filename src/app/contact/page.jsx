@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <h1>Contact Us</h1>
       <form>
         <label htmlFor="name">Name:</label>
