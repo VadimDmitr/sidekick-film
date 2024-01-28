@@ -1,6 +1,7 @@
 .aboutContainer {
   padding: 20px;
   margin: auto;
-  max-width: 600px;
+  /* max-width: 600px; */
   text-align: center;
+  background-color: wheat;
 }
