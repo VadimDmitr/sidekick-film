@@ -23,10 +23,9 @@
   overflow: hidden;
 }
 
-
 .serviceTitle {
-  color :aliceblue;
-  font-size: 2rem;
+  color: rgb(32, 1, 1);
+  font-size: 4rem; 
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -40,28 +39,29 @@
 }
 
 .serviceDescription {
-  font-size: 1rem;
-  color:aliceblue;
+  font-size: 1.8rem;
+  color: rgb(32, 1, 1);
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 1200px) {
   .serviceTitle {
     font-size: 4rem;
   }
 
-  .serviceItem {
-    width: 50%;
+  .serviceDescription {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceTitle {
+    font-size: 2rem;
   }
 
   .serviceDescription {
-    font-size: 1.25rem;
-  }
-
-  .servicesContainer {
-    /* max-width: 800px; */
-    margin: 0 auto;
+    font-size: 1rem;
   }
 }
