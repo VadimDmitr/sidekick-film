@@ -1,51 +1,56 @@
 .servicesContainer {
-  padding: 0px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/servicesPage.jpg');
-  text-align: center;
+  background-image: url('/mainPage1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  color: #fff;
+  color: black;
+  padding: 1.25rem;
+  box-sizing: border-box;
 }
 
 .serviceTitle {
-  color: white;
-  font-size: 4rem;
+  color :aliceblue;
+  font-size: 2rem;
   text-align: center;
-  margin: 0rem 0rem 0rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .serviceItem {
   border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem;
   width: 100%;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 .serviceDescription {
   font-size: 1rem;
-  color: white;
-  display: flex;
-  /* font-size: 1.25rem;
-  
-  margin: 1rem 20rem;*/
+  color:aliceblue;
   font-weight: bold;
-  justify-content: center;
-  align-items: center; 
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 600px) {
-  .servicesContainer {
-    flex-direction: row;
-    justify-content: space-around;
+  .serviceTitle {
+    font-size: 4rem;
   }
 
   .serviceItem {
-    width: 30%;
+    width: 50%;
+  }
+
+  .serviceDescription {
+    font-size: 1.25rem;
+  }
+
+  .servicesContainer {
+    /* max-width: 800px; */
+    margin: 0 auto;
   }
 }

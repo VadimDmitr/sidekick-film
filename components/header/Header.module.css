@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  /* position: relative; */
   justify-content: space-between;
   align-items: center;
   background: #333;
@@ -8,10 +9,14 @@
 }
 
 .mainLogo {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  text-decoration: none;
+  text-decoration: none; */
+  position: relative;
+  left: 2rem;
+  top: 3.5rem;
+  transform: translateY(-100%);
 }
 
 .nav {

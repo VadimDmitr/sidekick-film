@@ -1,11 +1,19 @@
 import styles from './Header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.mainLogo}>
-        Logo
+        <>
+          <Image
+            src="/sidekickLogo.webp"
+            alt="Sidekick Logo"
+            width={100}
+            height={50}
+          />
+        </>
       </Link>
       <nav className={styles.nav}>
         {/* <Link href="/" className={styles.navlink}>

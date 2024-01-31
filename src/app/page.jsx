@@ -2,6 +2,7 @@ import styles from './home.module.css';
 import About from './about/page';
 import Services from './services/page';
 import Contact from './contact/page';
+import VideoComponent from './video/page';
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
         <h1 className={styles.welcomeTitle}>Welcome to Our Website</h1>
       </div>
       <section className={styles.section}>
-        <Services />
         <About />
+        <Services />
+        <VideoComponent />
         <Contact />
       </section>
     </>

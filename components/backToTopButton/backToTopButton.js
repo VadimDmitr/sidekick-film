@@ -27,8 +27,8 @@ const BackToTopButton = () => {
 
   const backToTopButtonStyle = {
     position: 'fixed',
-    bottom: '2rem',
-    right: '2rem',
+    bottom: '4rem',
+    right: '3rem',
     backgroundColor: '#4CAF50',
   };
 

@@ -4,27 +4,21 @@ const Contact = () => {
   const emailTo = 'danschaefer123@hotmail.com';
   const subject = 'Inquiry from Website';
   const body = 'Hello, I would like to discuss...';
-  const googleMapsUrl =
-    'https://www.google.com/maps/place/300+S+Dixon+Ave,+Cary,+NC+27511';
+  const googleMapsUrl = 'https://www.google.com/maps/place/Cary,+NC';
 
   return (
     <div id="contact" className={styles.contact}>
-      <h1>Contact Us</h1>
+       <p>This page we must change and add any design</p>
+      <h1>Dan Schaefer-Producer Sidekick Film Co.</h1>
+
       <p>
-        <strong>Address: </strong>
-        <a
-          href={googleMapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.contactLink}
-        >
-          300 S Dixon Ave, Cary, NC 27511
-        </a>
+        <strong> Contact Us</strong>
       </p>
+
       <p>
         <strong>Phone: </strong>
-        <a href="tel:19196694879" className={styles.contactLink}>
-          +1 919-669-4879
+        <a href="tel:19842224151" className={styles.contactLink}>
+          +1 984-222-4151
         </a>{' '}
       </p>
       <p>
@@ -36,7 +30,17 @@ const Contact = () => {
           {emailTo}
         </a>
       </p>
-
+      <p>
+        <strong>Address: </strong>
+        <a
+          href={googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.contactLink}
+        >
+          Cary, North Carolina
+        </a>
+      </p>
       <a
         href={`mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
         className={styles.contactLink}
