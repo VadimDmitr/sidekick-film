@@ -1,49 +1,67 @@
 .servicesContainer {
-  padding: 20px;
+  position: relative;
+  height: 100vh;
+  color: black;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/mainPage.jpg');
-  text-align: center;
+}
+
+.backgroundVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: #fff;
+  overflow: hidden;
 }
 
 .serviceTitle {
-  color: white;
-  font-size: 4rem;
+  color: rgb(32, 1, 1);
+  font-size: 4rem; 
   text-align: center;
-  margin: 9.2rem 0rem 0rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .serviceItem {
   border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem;
   width: 100%;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 .serviceDescription {
-  font-size: 1rem;
-  color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
+  color: rgb(32, 1, 1);
   font-weight: bold;
-  margin: 1rem 20rem;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) {
-  .servicesContainer {
-    flex-direction: row;
-    justify-content: space-around;
+@media (max-width: 1200px) {
+  .serviceTitle {
+    font-size: 4rem;
   }
 
-  .serviceItem {
-    width: 30%;
+  .serviceDescription {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceTitle {
+    font-size: 2rem;
+  }
+
+  .serviceDescription {
+    font-size: 1rem;
   }
 }

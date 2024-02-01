@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0);
+  padding: 5rem;
+  gap: 20px;
+}
+
+.checkOutWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-end;
+  flex-basis: 15%; 
+  height: 100%;
+  color: aliceblue;
+  margin-right: 1.25rem; 
+  font-weight: bold;
+}
+
+.videosGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns  */
+  grid-gap: 20px;
+  flex-grow: 1; /* video grid space */
+}
+
+.videoItem {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+}
+
+.videoItem iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .videosGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .checkOutWork {
+    order: -1; /* Changing the order to make text appear on the top */
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .videosGrid {
+    grid-template-columns: 1fr; /* 1 column small screens */
+  }
+}
