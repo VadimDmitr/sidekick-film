@@ -3,7 +3,7 @@
   /* position: relative; */
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #1d1d1d;
   color: white;
   padding: 1rem;
 }
@@ -41,8 +41,17 @@
 }
 
 @media (max-width: 600px) {
+  .mainLogo {
+    position: relative;
+    left: 0.5rem;
+    
+   
+  }
+
   .nav {
-    display: none;
+    /* display: none; */
+    font-size: 0.9rem;
+    gap: 0.01rem;
   }
 
   .menu-button {
