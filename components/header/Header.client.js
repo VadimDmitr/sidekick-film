@@ -10,8 +10,8 @@ const Header = () => {
           <Image
             src="/sidekickLogo.webp"
             alt="Sidekick Logo"
-            width={100}
-            height={50}
+            width={145}
+            height={60}
           />
         </>
       </Link>
@@ -28,11 +28,14 @@ const Header = () => {
         {/* <a href="#contact" className={styles.navlink}>
           Contact
         </a> */}
+        <a href="#ourWork" className={styles.navlink}>
+          Projects
+        </a>
         <Link href="/contact" className={styles.navlink}>
           Contact
         </Link>
       </nav>
-      <button className={styles.menubutton}>Menu</button>
+      {/* <button className={styles.menubutton}>Menu</button> */}
     </header>
   );
 };
