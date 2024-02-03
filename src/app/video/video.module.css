@@ -1,29 +1,26 @@
 .container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column; 
+  align-items: center;
   background-color: rgba(0, 0, 0);
   padding: 5rem;
   gap: 20px;
 }
 
 .checkOutWork {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: flex-end;
-  flex-basis: 15%; 
-  height: 100%;
-  color: aliceblue;
-  margin-right: 1.25rem; 
+  text-align: center;
   font-weight: bold;
+  font-size: 2.5rem;
+  color: aliceblue;
+  
+  
 }
 
 .videosGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns  */
   grid-gap: 20px;
-  flex-grow: 1; /* video grid space */
+  width: 100%; 
 }
 
 .videoItem {
@@ -47,16 +44,6 @@
 }
 
 @media (max-width: 600px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .checkOutWork {
-    order: -1; /* Changing the order to make text appear on the top */
-    margin-right: 0;
-    align-items: center;
-  }
-
   .videosGrid {
     grid-template-columns: 1fr; /* 1 column small screens */
   }

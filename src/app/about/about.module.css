@@ -11,3 +11,11 @@
   /* height: 100vh;
   width: 100vw; */
 }
+
+.aboutTitle {
+font-size: 2.5rem;
+}
+
+.aboutDescription {
+  font-size: 1.5rem;
+  }

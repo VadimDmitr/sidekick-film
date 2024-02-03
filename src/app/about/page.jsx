@@ -8,8 +8,10 @@ export default function About() {
         <title>About Us</title>
         <meta name="description" content="Learn more about us" />
       </Head>
-      <h1>About Us</h1>
-      <p>This is the about page where you can learn more about our company.</p>
+      <h1 className={styles.aboutTitle}>About Us </h1>
+      <p className={styles.aboutDescription}>
+        This is the about page where you can learn more about our company.
+      </p>
     </div>
   );
 }
