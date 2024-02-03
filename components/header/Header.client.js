@@ -19,11 +19,11 @@ const Header = () => {
         {/* <Link href="/" className={styles.navlink}>
           Home
         </Link> */}
-        <a href="#services" className={styles.navlink}>
-          Services
-        </a>
         <a href="#about" className={styles.navlink}>
           About
+        </a>
+        <a href="#services" className={styles.navlink}>
+          Services
         </a>
         {/* <a href="#contact" className={styles.navlink}>
           Contact

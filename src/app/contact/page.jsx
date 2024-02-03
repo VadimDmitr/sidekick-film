@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './contact.module.css';
 
 const Contact = () => {
@@ -8,18 +9,18 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.contact}>
-       <p>This page we must change and add any design</p>
-      <h1>Dan Schaefer-Producer Sidekick Film Co.</h1>
+      <p>This page we must change and add any design</p>
+      <h1>Dan Schaefer - Producer Sidekick Film Co.</h1>
 
       <p>
-        <strong> Contact Us</strong>
+        <strong>Contact Us</strong>
       </p>
 
       <p>
         <strong>Phone: </strong>
         <a href="tel:19842224151" className={styles.contactLink}>
           +1 984-222-4151
-        </a>{' '}
+        </a>
       </p>
       <p>
         <strong>Email: </strong>

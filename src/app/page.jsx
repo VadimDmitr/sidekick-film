@@ -10,7 +10,8 @@ export default function Home() {
       <div className={styles.backgroundImageContainer}>
         <h1 className={styles.welcomeTitle}>Welcome to Our Website</h1>
         <p className={styles.welcomeText}>
-          Maybe we must remove the title and add something here
+          Maybe we must remove the title and add something here, or change the
+          picture if you want
         </p>
       </div>
       <section className={styles.section}>
