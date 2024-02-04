@@ -15,28 +15,47 @@
 }
 
 .youtubeLinkContainer {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 
-.link,
-.iconLink {
+.combinedLink {
   color: #ff0000;
   background: none;
   border: none;
   cursor: pointer;
   font-size: inherit;
   text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.combinedLink:hover {
+  color: #cc0000;
+}
+.textWithMargin {
+  margin-right: 0.5rem;
 }
 
 .iconLink {
-  text-decoration: none;
-  margin: 0 0.5rem;
+  display: none; 
 }
 
 .copyRight {
   font-size: 0.75rem;
   text-align: center;
-  margin-top: 0.4rem;  
+  margin-top: 0.3rem;  
 }
+
+.copyRightText, .emailLink {
+  margin-left: 0.3rem;
+  margin-bottom: 0.4rem;
+  color: #6a68d6; 
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #4240c8; 
+}
+
