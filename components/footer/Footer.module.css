@@ -19,7 +19,8 @@
 }
 
 .combinedLink {
-  color: #ff0000;
+  color: white;
+  /* #ff0000 */
   background: none;
   border: none;
   cursor: pointer;
@@ -28,10 +29,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none; 
 }
 
 .combinedLink:hover {
-  color: #cc0000;
+  color: white;
+  text-decoration: underline; 
 }
 .textWithMargin {
   margin-right: 0.5rem;
