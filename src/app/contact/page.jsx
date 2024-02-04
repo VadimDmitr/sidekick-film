@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.contact}>
-      <p>This page we must change and add any design</p>
+      <p>This page we can change and add any design</p>
       <h1>Dan Schaefer - Producer Sidekick Film Co.</h1>
 
       <p>

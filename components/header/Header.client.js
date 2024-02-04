@@ -8,10 +8,10 @@ const Header = () => {
       <Link href="/" className={styles.mainLogo}>
         <>
           <Image
-            src="/sidekickLogo.webp"
+            src="/sidekickLogo1.webp"
             alt="Sidekick Logo"
-            width={145}
-            height={60}
+            width={170}
+            height={70}
           />
         </>
       </Link>
