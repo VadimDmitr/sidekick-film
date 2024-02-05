@@ -3,7 +3,6 @@ import { FaYoutube } from 'react-icons/fa';
 import styles from './Footer.module.css';
 
 const Footer = () => {
-  // Переменные перемещены на уровень компонента для доступности
   const emailTo = 'vadzzimluch@gmail.com';
   const subject = encodeURIComponent('New Inquiry via Sidekick Website');
   const body = encodeURIComponent(
