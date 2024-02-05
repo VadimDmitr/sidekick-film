@@ -1,3 +1,9 @@
+.topBar {
+  background-color: #000;
+  height: 0.1rem;
+  width: 100%;
+}
+
 .contact {
   padding: 1.25rem;
   text-align: center;
