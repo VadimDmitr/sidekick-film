@@ -11,9 +11,7 @@ const Contact = () => {
     <>
       <div className={styles.topBar}></div>
       <div id="contact" className={styles.contact}>
-        <p>This page we can change and add any design</p>
         <h1>Dan Schaefer - Producer Sidekick Film Co.</h1>
-
         <p>
           <strong>Contact Us</strong>
         </p>

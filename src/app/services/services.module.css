@@ -59,6 +59,36 @@
   margin: 10px 0;
 }
 
+.animateLeft {
+  animation: slideInFromLeft 1.2s forwards;
+}
+
+.animateRight {
+  animation: slideInFromRight 1.2s forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1250px) {
   .servicesContainer {
     flex-direction: column;
