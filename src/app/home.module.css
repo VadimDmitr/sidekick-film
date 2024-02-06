@@ -8,15 +8,15 @@
 }
 
 .backgroundImageContainer {
-  margin: 0rem 0rem 0rem 0rem;
-  background-image: url('/mainPage1.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/about.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .welcomeTitle {
@@ -25,8 +25,15 @@
   text-align: center;
 }
 
+.welcomeText {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .section {
-  padding: 0rem 0rem; 
+  padding: 0rem 0rem;
 }
 
 .description {
@@ -74,8 +81,7 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition:
-    /* background 200ms, */
-    border 200ms;
+    /* background 200ms, */ border 200ms;
 }
 
 .card span {

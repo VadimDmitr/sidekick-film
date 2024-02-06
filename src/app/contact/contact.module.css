@@ -1,34 +1,67 @@
+.topBar {
+  background-color: #000;
+  height: 0.1rem;
+  width: 100%;
+}
+
 .contact {
   padding: 1.25rem;
   text-align: center;
-  background-color:  whitesmoke;
+  background-color: aliceblue;
 }
 
-.contact a {
+.contact h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact p, .contact strong {
+  font-size: 1.15rem;
+  margin: 0.5rem 0;
+}
+
+.contactLink {
   text-decoration: none;
   color: #000;
+  font-size: 1.125rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.contact button {
-  background-color: #4CAF50; 
+.contactLink:hover,
+.contactLink:focus {
+  color: #367a38;
+  text-decoration: underline;
+}
+
+.contactButton {
+  background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 0.9375rem 2rem;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 1.125rem;
+  margin: 0.25rem 0.125rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width: 600px) {
-  .contact {
-    padding: 10px;
+.contactButton:hover,
+.contactButton:focus {
+  background-color: #367a38;
+}
+
+@media (max-width: 37.5rem) {
+  .contact h1 {
+    font-size: 1.25rem;
   }
 
-  .contact button {
-    padding: 10px 20px;
-    font-size: 14px;
+  .contact p, .contact strong {
+    font-size: 1rem;
+  }
+
+  .contactButton {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
   }
 }

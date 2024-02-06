@@ -8,10 +8,10 @@ const Header = () => {
       <Link href="/" className={styles.mainLogo}>
         <>
           <Image
-            src="/sidekickLogo.webp"
+            src="/sidekickLogo1.webp"
             alt="Sidekick Logo"
-            width={100}
-            height={50}
+            width={170}
+            height={70}
           />
         </>
       </Link>
@@ -19,20 +19,23 @@ const Header = () => {
         {/* <Link href="/" className={styles.navlink}>
           Home
         </Link> */}
-        <a href="#services" className={styles.navlink}>
-          Services
-        </a>
         <a href="#about" className={styles.navlink}>
           About
+        </a>
+        <a href="#services" className={styles.navlink}>
+          Services
         </a>
         {/* <a href="#contact" className={styles.navlink}>
           Contact
         </a> */}
+        <a href="#ourWork" className={styles.navlink}>
+          Projects
+        </a>
         <Link href="/contact" className={styles.navlink}>
           Contact
         </Link>
       </nav>
-      <button className={styles.menubutton}>Menu</button>
+      {/* <button className={styles.menubutton}>Menu</button> */}
     </header>
   );
 };
