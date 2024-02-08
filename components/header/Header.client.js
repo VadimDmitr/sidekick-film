@@ -19,17 +19,19 @@ const Header = () => {
         {/* <Link href="/" className={styles.navlink}>
           Home
         </Link> */}
-        <a href="#about" className={styles.navlink}>
-          About
-        </a>
-        <a href="#services" className={styles.navlink}>
-          Services
-        </a>
+        
+       
         {/* <a href="#contact" className={styles.navlink}>
           Contact
         </a> */}
         <a href="#ourWork" className={styles.navlink}>
           Projects
+        </a>
+         <a href="#services" className={styles.navlink}>
+          Marketing
+        </a>
+        <a href="#about" className={styles.navlink}>
+          About
         </a>
         <Link href="/contact" className={styles.navlink}>
           Contact

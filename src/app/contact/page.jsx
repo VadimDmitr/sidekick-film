@@ -3,23 +3,24 @@ import styles from './contact.module.css';
 
 const Contact = () => {
   const emailTo = 'danschaefer123@hotmail.com';
-  const subject = 'Inquiry from Website';
+  const subject = 'Inquiry from SideKick Website';
   const body = 'Hello, I would like to discuss...';
-  const googleMapsUrl = 'https://www.google.com/maps/place/NC';
+  const googleMapsUrl = 'https://www.google.com/maps/place/Raleigh/+NC';
 
   return (
     <>
       <div className={styles.topBar}></div>
       <div id="contact" className={styles.contact}>
-        <h1>Dan Schaefer - Producer Sidekick Film Co.</h1>
+        <h1>Sidekick Film Co.</h1>
+        <p>Dan Schaefer - Producer </p>
         <p>
           <strong>Contact Us</strong>
         </p>
 
         <p>
           <strong>Phone: </strong>
-          <a href="tel:19842224151" className={styles.contactLink}>
-            +1 984-222-4151
+          <a href="tel:19842224153" className={styles.contactLink}>
+            +1 984-222-4153
           </a>
         </p>
         <p>
