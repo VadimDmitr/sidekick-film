@@ -8,11 +8,12 @@ export default function Home() {
   return (
     <>
       <div className={styles.backgroundImageContainer}>
-        <h1 className={styles.welcomeTitle}>Welcome to Our Website</h1>
-        <p className={styles.welcomeText}>
-          Maybe we must remove the title and add something here, or change the
-          picture if you want
-        </p>
+        <div className={styles.textOverlay}>
+          <h1 className={styles.welcomeTitle}>
+            Video motivates your customers
+          </h1>
+          <p className={styles.welcomeText}>Let Sidekick tell your story.</p>
+        </div>
       </div>
       <section className={styles.section}>
         <VideoComponent />
