@@ -16,7 +16,8 @@
 
 .nav {
   display: flex;
-  gap: 1rem;
+  padding-right: 1.5rem;
+  gap: 0.6rem;
   font-size: 1.3rem;
 }
 

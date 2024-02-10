@@ -41,7 +41,7 @@
 .welcomeTitle {
   z-index: 2;
   color: white;
-  font-size: 4rem;
+  font-size: 5.8rem;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
@@ -52,7 +52,7 @@
 .welcomeText {
   z-index: 2;
   color: white;
-  font-size: 3rem;
+  font-size: 4.4rem;
   font-weight: bold;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);

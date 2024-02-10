@@ -27,7 +27,7 @@
 
 .serviceTitle {
   color: rgb(30, 28, 28);
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: bold;
   text-align: center;
   z-index: 1;
@@ -35,7 +35,7 @@
 }
 
 .serviceCard {
-  font-family:'Times New Roman', Times, serif;
+  /* font-family:'Times New Roman', Times, serif; */
   position: relative;
   top: 0;
   border: 1px solid #ddd;
@@ -55,9 +55,9 @@
 }
 
 .serviceDescription {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   color: rgb(32, 1, 1);
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 10px 0;
 }
 

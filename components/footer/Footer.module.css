@@ -46,7 +46,8 @@
 }
 
 .copyRight {
-  font-size: 0.75rem;
+  font-family: inter;
+  font-size: 0.67rem;
   text-align: center;
   margin-top: 0.3rem;  
 }

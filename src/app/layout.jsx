@@ -1,10 +1,10 @@
-import { Inter } from 'next/font/google';
+import { DM_Sans, Inter, Roboto_Condensed } from 'next/font/google';
 import './globals.css';
 import Header from '../../components/header/Header.client';
 import Footer from '../../components/footer/Footer.client';
 import BackToTopButton from '../../components/backToTopButton/backToTopButton';
 
-const inter = Inter({ subsets: ['latin'] });
+const robotoCondensed = Roboto_Condensed({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
   return (
@@ -19,7 +19,10 @@ export default function RootLayout({ children }) {
         />
         <meta name="theme-color" />
       </head>
-      <body className={inter.className} suppressHydrationWarning={true}>
+      <body
+        className={robotoCondensed.className}
+        suppressHydrationWarning={true}
+      >
         <div>
           <Header />
           <main>{children}</main>
