@@ -18,7 +18,7 @@ export default function Services() {
     <div className={styles.servicesContainer} id="services">
       <video autoPlay muted loop className={styles.backgroundVideo}>
         <source src="/ourServices.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video tag
       </video>
       <h1 className={styles.serviceTitle}>Why video matters...</h1>
       <div
