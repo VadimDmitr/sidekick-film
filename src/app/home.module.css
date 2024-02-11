@@ -106,11 +106,11 @@
   }
 
   .welcomeTitle {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
   .welcomeText {
     font-size: 1.9rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
   }
 }
