@@ -11,7 +11,7 @@
 .subscribeSection {
   text-align: center;
   margin-bottom: 0.5rem; 
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: bold; 
 }
 
@@ -46,7 +46,8 @@
 }
 
 .copyRight {
-  font-size: 0.75rem;
+  font-family: inter;
+  font-size: 0.65rem;
   text-align: center;
   margin-top: 0.3rem;  
 }

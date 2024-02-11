@@ -3,7 +3,7 @@
   margin: auto;
   text-align: center;
   /* color: aliceblue; */
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: aliceblue;
   /* background-image: url('/mainPage1.jpg'); */
   background-size: cover; /* crop the image */
@@ -13,7 +13,7 @@
 }
 
 .aboutTitle {
-font-size: 2.5rem;
+font-size: 2.8rem;
 }
 
 .aboutDescription {

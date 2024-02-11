@@ -3,14 +3,14 @@
   flex-direction: column; 
   align-items: center;
   background-color: rgba(0, 0, 0);
-  padding: 5rem;
-  gap: 20px;
+  padding: 2rem 5rem 8rem 5rem;
+  gap: 1.4rem;
 }
 
 .checkOutWork {
   text-align: center;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: aliceblue;
   
   
@@ -19,7 +19,7 @@
 .videosGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns  */
-  grid-gap: 20px;
+  grid-gap: 1.5rem;
   width: 100%; 
 }
 
