@@ -1,6 +1,6 @@
 import styles from './home.module.css';
 import About from './about/page';
-import Services from './marketing/page';
+import Marketing from './marketing/page';
 import Contact from './contact/page';
 import VideoComponent from './video/page';
 
@@ -16,9 +16,9 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.section}>
-        <VideoComponent />
-        <Services />
         <About />
+        <VideoComponent />
+        <Marketing />
         <Contact />
       </section>
     </>
