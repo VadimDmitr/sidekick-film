@@ -1,6 +1,6 @@
 import styles from './home.module.css';
 import About from './about/page';
-import Services from './services/page';
+import Services from './marketing/page';
 import Contact from './contact/page';
 import VideoComponent from './video/page';
 
