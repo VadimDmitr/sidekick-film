@@ -6,12 +6,15 @@ import { useInView } from 'react-intersection-observer';
 export default function Services() {
   const { ref: firstCardRef, inView: firstCardInView } = useInView({
     threshold: 0.1,
+    triggerOnce: true, 
   });
   const { ref: secondCardRef, inView: secondCardInView } = useInView({
     threshold: 0.1,
+    triggerOnce: true, 
   });
   const { ref: thirdCardRef, inView: thirdCardInView } = useInView({
     threshold: 0.1,
+    triggerOnce: true, 
   });
 
   return (
