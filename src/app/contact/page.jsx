@@ -18,8 +18,8 @@ const Contact = () => {
             src="/logoContacts.webp"
             alt="Sidekick Film Co. Logo"
             className={styles.logoContacts}
-            width={280}
-            height={80}
+            width={335}
+            height={95}
           />
         </div>
         <p className={styles.producer}>Dan Schaefer | Producer</p>
