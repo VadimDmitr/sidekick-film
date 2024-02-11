@@ -32,6 +32,8 @@ const BackToTopButton = () => {
     width: '2.8rem',
     height: '2.8rem',
     textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
     lineHeight: '2.8rem',
     fontSize: '1.5rem',
     cursor: 'pointer',
