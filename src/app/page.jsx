@@ -1,24 +1,24 @@
-import Link from 'next/link';
-import styles from './page.module.css';
-import Services from '../../pages/services';
+import styles from './home.module.css';
+import About from './about/page';
+import Marketing from './marketing/page';
+import Contact from './contact/page';
+import VideoComponent from './video/page';
 
 export default function Home() {
   return (
     <>
       <div className={styles.backgroundImageContainer}>
-        <h1 className={styles.welcomeTitle}>Welcome to Our Website</h1>
+        <div className={styles.textOverlay}>
+          <h1 className={styles.welcomeTitle}>Are you invisible?</h1>
+          <p className={styles.welcomeText}>Video will get you noticed.</p>
+        </div>
       </div>
-      <section>
-        <Services />
-        {/* <Link href="/services" className={styles.serviceLink}>Services</Link> */}
-        {/*additional services with corresponding links */}
+      <section className={styles.section}>
+        <About />
+        <VideoComponent />
+        <Marketing />
+        <Contact />
       </section>
-      <section id="about" className={styles.section}>
-        <h2>About Us</h2>
-        {/* Content about the company */}
-      </section>
-      {/* Sections for additional content */}
-      {/* ... */}
     </>
   );
 }

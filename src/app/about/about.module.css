@@ -1,0 +1,21 @@
+.aboutContainer {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  /* color: aliceblue; */
+  font-size: 3rem;
+  background-color: aliceblue;
+  /* background-image: url('/mainPage1.jpg'); */
+  background-size: cover; /* crop the image */
+  background-position: center; 
+  /* height: 100vh;
+  width: 100vw; */
+}
+
+.aboutTitle {
+font-size: 2.8rem;
+}
+
+.aboutDescription {
+  font-size: 1.5rem;
+  }
