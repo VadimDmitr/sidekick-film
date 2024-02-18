@@ -27,9 +27,9 @@ const Header = () => {
         {/* <a href="#contact" className={styles.navlink}>
           Contact
         </a> */}
-        <a href="#about" className={styles.navlink}>
+        {/* <a href="#about" className={styles.navlink}>
           About
-        </a>
+        </a> */}
         <a href="#ourWork" className={styles.navlink}>
           Projects
         </a>
