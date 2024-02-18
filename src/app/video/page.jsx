@@ -47,6 +47,7 @@ const VideoComponent = () => {
         {videos.map((video, index) => (
           <div key={index} className={styles.videoItem}>
             <iframe
+              loading="lazy"
               className={styles.iframeStyle}
               src={video.url}
               allowFullScreen
