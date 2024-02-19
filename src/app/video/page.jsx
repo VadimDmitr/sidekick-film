@@ -39,8 +39,8 @@ const VideoComponent = () => {
 
   return (
     <div className={styles.container} id="ourWork">
-      <div className={styles.checkOutWork}>
-        <p>Check out our work</p>
+      <div className={styles.videoTitle}>
+        <p>Sidekick Projects</p>
         {/* <Image src="/arrow-image.png" alt="Arrow" width={50} height={50} /> */}
       </div>
       <div className={styles.videosGrid}>

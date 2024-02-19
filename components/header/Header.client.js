@@ -37,7 +37,7 @@ const Header = () => {
           Marketing
         </a>
         <Link href="#contact" className={styles.navlink}>
-          Contact
+          Contacts
         </Link>
       </nav>
       {/* <button className={styles.menubutton}>Menu</button> */}

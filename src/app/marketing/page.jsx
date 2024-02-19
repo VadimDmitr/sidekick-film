@@ -23,7 +23,9 @@ export default function Services() {
         <source src="/ourServices.mp4" type="video/mp4" />
         Your browser does not support the video tag
       </video>
-      <h1 className={styles.serviceTitle}>Video Muscle</h1>
+      <h1 className={styles.serviceTitle}>
+        Video Muscle (---American Flag loop video---)
+      </h1>
       <div
         ref={firstCardRef}
         className={`${styles.serviceCard} ${firstCardInView ? styles.animateLeft : ''}`}
