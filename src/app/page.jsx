@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './home.module.css';
 import About from './about/page';
 import Marketing from './marketing/page';
@@ -13,10 +14,12 @@ export default function Home() {
           <p className={styles.welcomeText}>Video will get you noticed.</p>
         </div>
       </div>
+      {/* Gradient Transition Div */}
+      <div className={styles.gradientTransition}></div>
       <section className={styles.section}>
-        <About />
-        <VideoComponent />
         <Marketing />
+        <VideoComponent />
+        <About />
         <Contact />
       </section>
     </>
