@@ -4,36 +4,36 @@ import Image from 'next/image';
 const VideoComponent = () => {
   const videos = [
     {
-      title: `Video 1`,
-      url: `https://www.youtube.com/embed/b553Rwefdlk`,
+      title: `YouTube Playlist`,
+      url: `https://www.youtube.com/embed/videoseries?list=FL5cwCWeag96OnqQjLDK4LRg`,
     },
     {
       title: `F3 Football Danger Zone`,
-      url: `https://www.youtube.com/embed/kbfQO7TvG_Y`,
+      url: `https://www.youtube.com/embed/4GaT6yzMZfE`,
     },
     {
       title: `Video 1`,
-      url: `https://www.youtube.com/embed/b553Rwefdlk`,
+      url: `https://www.youtube.com/embed/mwfcMlb_BOk`,
     },
     {
       title: `F3 Football Danger Zone`,
-      url: `https://www.youtube.com/embed/kbfQO7TvG_Y`,
+      url: `https://www.youtube.com/embed/8RAzQirQ8KI`,
     },
     {
       title: `Video 1`,
-      url: `https://www.youtube.com/embed/b553Rwefdlk`,
+      url: `https://www.youtube.com/embed/nhTHjLI5Ur0`,
     },
     {
       title: `F3 Football Danger Zone`,
-      url: `https://www.youtube.com/embed/kbfQO7TvG_Y`,
+      url: `https://www.youtube.com/embed/OPj9s2VBEjw`,
     },
     {
       title: `Video 1`,
-      url: `https://www.youtube.com/embed/b553Rwefdlk`,
+      url: `https://www.youtube.com/embed/i4tqR9jqqnY`,
     },
     {
       title: `F3 Football Danger Zone`,
-      url: `https://www.youtube.com/embed/kbfQO7TvG_Y`,
+      url: `https://www.youtube.com/embed/ZhmizQG5Iz0`,
     },
   ];
 
