@@ -1,17 +1,53 @@
-import Head from 'next/head';
+import React from 'react';
 import styles from './about.module.css';
 
-export default function About() {
+const SidekickAd = () => {
   return (
-    <div className={styles.aboutContainer} id="about">
-      <Head>
-        <title>About Us</title>
-        <meta name="description" content="Learn more about us" />
-      </Head>
-      <h1 className={styles.aboutTitle}>About Us </h1>
-      <p className={styles.aboutDescription}>
-        This is the about page where you can learn more about our company.
+    <div className={styles.sidekickContainer}>
+      <p>
+        Sidekick leverages creative video content with strategic messaging to
+        build higher awareness, and loyalty to your brand & organization.
       </p>
+      <p>
+        The extremely competitive world of Internet and email marketing demands
+        content to be expertly crafted, and memorable to reach the target
+        audience.
+      </p>
+      <p className={styles.highlightedText}>
+        Two-thirds of consumers say they’d rather watch a video to learn about a
+        product or service than read about it.
+      </p>
+      <p>That’s why video is the KING of the Internet!</p>
+      <p>
+        Video production used to be tedious, slow, and expensive. Thankfully,
+        not anymore.
+      </p>
+      <p>
+        Sidekick utilizes high-tech equipment, hyper-efficient editing software,
+        with tried & true sound, lighting, and filming practices.
+      </p>
+      <p>
+        The result, stunning & effective media at a price that won’t bust your
+        marketing budget.
+      </p>
+      <p className={styles.highlightedText}>
+        Meet your new video production team{' '}
+      </p>
+      <p>
+        We promise, your initial consultation will be wildly informative, and
+        yet totally-free
+      </p>
+
+      <div className={styles.contactInfo}>
+        <p>
+          Call us 984-222-4153 or{' '}
+          <a href="mailto:danschaefer123@hotmail.com">
+            danschaefer123@hotmail.com
+          </a>
+        </p>
+      </div>
     </div>
   );
-}
+};
+
+export default SidekickAd;

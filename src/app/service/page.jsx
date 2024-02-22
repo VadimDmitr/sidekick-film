@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import styles from './marketing.module.css';
+import styles from './service.module.css';
 import { useInView } from 'react-intersection-observer';
 
 export default function Services() {

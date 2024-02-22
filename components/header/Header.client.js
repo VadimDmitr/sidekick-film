@@ -34,7 +34,7 @@ const Header = () => {
           Projects
         </a>
         <a href="#services" className={styles.navlink}>
-          Marketing
+          Service
         </a>
         <Link href="#contact" className={styles.navlink}>
           Contact
