@@ -1,6 +1,6 @@
 import styles from './home.module.css';
-import SidekickAd from './about/page';
-import Services from './service/page';
+import SidekickAd from './sidekickAd/page';
+import VideoMuscle from './videoMuscle/page';
 import Contact from './contact/page';
 import VideoComponent from './video/page';
 
@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.section}>
-        <Services />
+        <VideoMuscle />
         <SidekickAd />
         <VideoComponent />
         <Contact />
