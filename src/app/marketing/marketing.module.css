@@ -28,14 +28,14 @@
 
 .serviceTitle {
   color: rgb(30, 28, 28);
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
   z-index: 1;
   width: 100%;
 }
 
-.serviceCard {
+/* .serviceCard {
   position: relative;
   top: 0;
   border: 1px solid #ddd;
@@ -106,7 +106,7 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 
 @media (max-width: 1250px) {
   .servicesContainer {

@@ -3,27 +3,28 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0);
-  padding: 4rem;
+  padding: 2rem  5rem  8rem 5rem;
   gap: 0px 20px 20px 20px;
 }
 
-.checkOutWork {
+.videoTitle {
   text-align: center;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  padding: 1.2rem;
   color: aliceblue;
 }
 
 .videosGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns  */
-  grid-gap: 20px;
+  grid-gap: 2rem;
   width: 100%;
 }
 
 .videoItem {
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 60%; /* Increased for smaller icons */
   position: relative;
 }
 
@@ -34,10 +35,17 @@
   width: 100%;
   height: 100%;
 }
+.videoItem:nth-child(-n+4) {
+  margin-bottom: 2.5rem;
+}
 
 @media (max-width: 1200px) {
   .videosGrid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+
+  .videoItem:nth-child(-n+4) {
+    margin-bottom: 1.5rem;
   }
 }
 

@@ -14,9 +14,9 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.section}>
+        <Marketing />
         <About />
         <VideoComponent />
-        <Marketing />
         <Contact />
       </section>
     </>
