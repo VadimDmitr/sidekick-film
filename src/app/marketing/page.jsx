@@ -4,18 +4,18 @@ import styles from './marketing.module.css';
 import { useInView } from 'react-intersection-observer';
 
 export default function Services() {
-  const { ref: firstCardRef, inView: firstCardInView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
-  const { ref: secondCardRef, inView: secondCardInView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
-  const { ref: thirdCardRef, inView: thirdCardInView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
+  // const { ref: firstCardRef, inView: firstCardInView } = useInView({
+  //   threshold: 0.1,
+  //   triggerOnce: true,
+  // });
+  // const { ref: secondCardRef, inView: secondCardInView } = useInView({
+  //   threshold: 0.1,
+  //   triggerOnce: true,
+  // });
+  // const { ref: thirdCardRef, inView: thirdCardInView } = useInView({
+  //   threshold: 0.1,
+  //   triggerOnce: true,
+  // });
 
   return (
     <div className={styles.servicesContainer} id="services">
@@ -24,7 +24,7 @@ export default function Services() {
         Your browser does not support the video tag
       </video>
       <h1 className={styles.serviceTitle}>Video Muscle</h1>
-      <div
+      {/* <div
         ref={firstCardRef}
         className={`${styles.serviceCard} ${firstCardInView ? styles.animateLeft : ''}`}
       >
@@ -62,7 +62,7 @@ export default function Services() {
         <p className={styles.serviceTitle}>
           Supercharge your marketing with Sidekick videos!
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
