@@ -114,10 +114,10 @@
     align-items: center;
   }
 
-  .serviceCard {
+  /* .serviceCard {
     width: 80%;
     margin: 20px auto;
-  }
+  } */
 
   .serviceTitle {
     margin-bottom: 2rem;
@@ -130,12 +130,12 @@
     height: auto;
   }
 
-  .serviceCard {
+  /* .serviceCard {
     width: 80%;
     margin: 10px auto;
   }
 
   .serviceDescription {
     font-size: 1rem;
-  }
+  } */
 }

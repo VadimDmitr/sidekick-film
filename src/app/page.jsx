@@ -3,6 +3,7 @@ import SidekickAd from './sidekickAd/page';
 import VideoMuscle from './videoMuscle/page';
 import Contact from './contact/page';
 import VideoComponent from './video/page';
+import VideoTraffic from './videoTraffic/page';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <VideoMuscle />
         <SidekickAd />
         <VideoComponent />
+        <VideoTraffic />
         <Contact />
       </section>
     </>

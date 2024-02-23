@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './videoMuscle.module.css';
 // import { useInView } from 'react-intersection-observer';
 
-export default function VideoMuscle() {
+export default function videoMuscle() {
   // const { ref: firstCardRef, inView: firstCardInView } = useInView({
   //   threshold: 0.1,
   //   triggerOnce: true,
