@@ -4,6 +4,10 @@ import styles from './sidekickAd.module.css';
 const sidekickAd = () => {
   return (
     <div className={styles.sidekickContainer}>
+      <h1>
+        Dan, Do you want to change font-size and font-familly for this section?
+        Let me know, please
+      </h1>
       <p>
         Sidekick leverages creative video content with strategic messaging to
         build higher awareness, and loyalty to your brand & organization.
@@ -40,8 +44,8 @@ const sidekickAd = () => {
 
       <div className={styles.contactInfo}>
         <p>
-          Call us 984-222-4153 or{' '}
-          <a href="mailto:danschaefer123@hotmail.com">
+          Call us <a href="tel:984-222-4153">984-222-4153</a> or{' '}
+          <a href="mailto:danschaefer123@hotmail.com?subject=Inquiry from SideKick Website&body=Hello, I would like to discuss...">
             danschaefer123@hotmail.com
           </a>
         </p>
