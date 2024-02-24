@@ -14,7 +14,7 @@ export default function videoTraffic() {
         loop
         playsInline
         className={styles.backgroundVideo}
-        onLoadedData={(e) => e.target.play()}
+        // onLoadedData={(e) => e.target.play()}
       >
         <source src="/videoTraffic2.mp4" type="video/mp4" />
         Your browser does not support the video tag

@@ -19,7 +19,7 @@ export default function videoMuscle() {
 
   return (
     <div className={styles.servicesContainer} id="services">
-      <video autoPlay muted loop className={styles.backgroundVideo}>
+      <video autoPlay muted loop playsInline className={styles.backgroundVideo}>
         <source src="/videoMuscle.mp4" type="video/mp4" />
         Your browser does not support the video tag
       </video>
