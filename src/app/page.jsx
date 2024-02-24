@@ -1,9 +1,9 @@
 import styles from './home.module.css';
-import SidekickAd from './sidekickAd/page';
 import VideoMuscle from './videoMuscle/page';
-import Contact from './contact/page';
-import VideoComponent from './video/page';
+import SidekickAd from './sidekickAd/page';
+import VideoComponent from './videoProjects/page';
 import VideoTraffic from './videoTraffic/page';
+import Contact from './contact/page';
 
 export default function Home() {
   return (
