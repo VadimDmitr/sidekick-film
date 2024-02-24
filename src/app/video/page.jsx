@@ -50,7 +50,8 @@ const VideoComponent = () => {
               loading="lazy"
               className={styles.iframeStyle}
               src={video.url}
-              // allowFullScreen
+              allow="fullscreen"
+              allowFullScreen
               title={video.title}
             ></iframe>
           </div>
