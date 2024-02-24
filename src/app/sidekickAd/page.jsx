@@ -40,8 +40,8 @@ const sidekickAd = () => {
 
       <div className={styles.contactInfo}>
         <p>
-          Call us 984-222-4153 or{' '}
-          <a href="mailto:danschaefer123@hotmail.com">
+          Call us <a href="tel:984-222-4153">984-222-4153</a> or{' '}
+          <a href="mailto:danschaefer123@hotmail.com?subject=Inquiry from SideKick Website&body=Hello, I would like to discuss...">
             danschaefer123@hotmail.com
           </a>
         </p>
