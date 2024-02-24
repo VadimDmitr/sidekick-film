@@ -32,6 +32,17 @@
   margin-top: 0.5rem;
 }
 
+  .sidekickContainer a {
+    color: #1c0ccb;
+    text-decoration: none;
+  }
+
+  .sidekickContainer a:hover {
+    color: #3b2af9;
+    text-decoration: underline;
+  }
+
+
 @media (max-width: 768px) {
   .sidekickContainer {
     padding: 0.625rem;
@@ -50,14 +61,5 @@
     font-size: 1.5rem;
     /* line-height: 1; */
     font-weight: bold;
-  }
-
-  .sidekickContainer a {
-    color: #1a0dab;
-    text-decoration: none;
-  }
-
-  .sidekickContainer a:hover {
-    text-decoration: underline;
   }
 }
