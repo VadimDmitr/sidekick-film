@@ -51,7 +51,6 @@ const VideoComponent = () => {
               className={styles.iframeStyle}
               src={video.url}
               allow="fullscreen"
-              allowFullScreen
               title={video.title}
             ></iframe>
           </div>
