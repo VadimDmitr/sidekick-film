@@ -4,6 +4,7 @@ import styles from './sidekickAd.module.css';
 const sidekickAd = () => {
   return (
     <div className={styles.sidekickContainer}>
+      <h1>Dan, Do you want to change font-size and font-familly for this section? Let me know, please</h1>
       <p>
         Sidekick leverages creative video content with strategic messaging to
         build higher awareness, and loyalty to your brand & organization.
