@@ -1,5 +1,5 @@
 .sidekickContainer {
-  font-family: Statista;
+  /* font-family: Statista; */
   padding: 1rem;
   color: #000;
   text-align: center;
@@ -42,6 +42,11 @@
 }
 
 /* Link styles */
+.contactInfo p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .sidekickContainer a {
   color: #1a0dab;
   text-decoration: none;
