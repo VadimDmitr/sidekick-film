@@ -27,8 +27,8 @@
 
 .contactInfo p {
   font-family: Noto Serif Black;
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 2rem;
   margin-top: 0.5rem;
 }
 
@@ -44,20 +44,20 @@
   .sidekickContainer p {
     font-size: 1.25rem;
   }
-}
 
-/* Link styles */
-.contactInfo p {
-  font-size: 1.5rem;
-  /* line-height: 1; */
-  font-weight: bold;
-}
+  /* Link styles */
+  .contactInfo p {
+    font-size: 1.5rem;
+    /* line-height: 1; */
+    font-weight: bold;
+  }
 
-.sidekickContainer a {
-  color: #1a0dab;
-  text-decoration: none;
-}
+  .sidekickContainer a {
+    color: #1a0dab;
+    text-decoration: none;
+  }
 
-.sidekickContainer a:hover {
-  text-decoration: underline;
+  .sidekickContainer a:hover {
+    text-decoration: underline;
+  }
 }
