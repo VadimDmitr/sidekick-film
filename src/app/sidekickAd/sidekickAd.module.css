@@ -12,17 +12,19 @@
 
 .sidekickContainer p {
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 0.6;
   margin-bottom: 0.5rem;
 }
 
 .sidekickContainer .highlightedText {
   font-size: 2rem; 
   font-weight: bold; 
+  line-height: 0.5;
   margin-bottom: 0.5rem;
 }
 
 .contactInfo p {
+  font-family: Noto Serif Black;
   font-size: 2rem;
   font-weight: bold;
 }
