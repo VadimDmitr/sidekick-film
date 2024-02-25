@@ -22,7 +22,7 @@ export default function Home() {
         <VideoComponent />
         <ServicesUpPage />
         <VideoTraffic />
-       <ServicesDownPage />
+        <ServicesDownPage />
         <Contact />
       </section>
     </>
