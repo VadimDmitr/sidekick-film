@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './sidekickAd.module.css';
 
-const sidekickAd = () => {
+const SidekickAd = () => {
   return (
     <div className={styles.sidekickContainer}>
       <p>
@@ -31,13 +31,12 @@ const sidekickAd = () => {
         marketing budget.
       </p>
       <p className={styles.highlightedText}>
-        Meet your new video production team{' '}
+        Meet your new video production team
       </p>
       <p>
         We promise, your initial consultation will be wildly informative, and
-        yet totally-free
+        yet totally-free.
       </p>
-
       <div className={styles.contactInfo}>
         <p>
           Call us <a href="tel:984-222-4153">984-222-4153</a> or{' '}
@@ -50,4 +49,4 @@ const sidekickAd = () => {
   );
 };
 
-export default sidekickAd;
+export default SidekickAd;

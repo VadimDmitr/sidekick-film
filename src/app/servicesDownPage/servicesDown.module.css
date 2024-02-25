@@ -9,17 +9,15 @@
 }
 
 .contentContainer h1 {
-  /* font-family: 'Noto Serif', serif;  */
   font-size: 2.25rem;
   margin-top: 0.3rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.3rem;
 }
 
 .contentContainer h2 {
-  /* font-family: 'Noto Serif', serif;  */
   font-size: 2.2rem;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .contentContainer p {
@@ -35,7 +33,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   margin-bottom: 1rem;
-  
 }
 
 @media (max-width: 768px) {
@@ -43,23 +40,17 @@
     padding: 0.625rem;
   }
 
-  .contentContainer h1 {
-    font-size: 2rem;
-  }
-
+  .contentContainer h1,
   .contentContainer h2 {
     font-size: 1.8rem;
   }
 
-  .contentContainer p {
+  .contentContainer p,
+  .serviceGrid {
     font-size: 1.25rem;
   }
 
   .serviceGrid {
-    font-size: 1.25rem;
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }

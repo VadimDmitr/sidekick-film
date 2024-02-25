@@ -5,29 +5,26 @@
   text-align: center;
   box-sizing: border-box;
   background: #fff;
-  /* max-width: 800px; */
   margin: auto;
 }
 
 .contentContainer h1 {
-  /* font-family: Noto Serif Black; */
   font-size: 2.7rem;
   margin-top: 0.3rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.3rem;
 }
 
 .contentContainer h2 {
-  /* font-family: Noto Serif Black; */
   font-size: 2.25rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .contentContainer p {
   font-size: 1.4rem;
   line-height: 1.5;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
 @media (max-width: 768px) {
@@ -36,7 +33,7 @@
   }
 
   .contentContainer h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .contentContainer h2 {

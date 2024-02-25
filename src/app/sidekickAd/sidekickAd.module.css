@@ -1,63 +1,58 @@
 .sidekickContainer {
-  /* font-family: Statista; */
-  padding: 1rem;
+  padding: 0.4rem;
+  padding-bottom: 0.2rem;
   color: #000;
   text-align: center;
   box-sizing: border-box;
+  background: #fff;
+  margin: auto;
 }
-/* .sidekickContainer h1 {
-  font-family: Noto Serif Black;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-} */
 
 .sidekickContainer p {
   font-size: 1.4rem;
-  line-height: 1.6;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
 .sidekickContainer .highlightedText {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1;
-  margin-top: 0.6rem;
-  margin-bottom: 0.4rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .contactInfo p {
-  font-family: Noto Serif Black;
-  font-weight: bold;
   font-size: 2rem;
-  margin-top: 0.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
-  .sidekickContainer a {
-    color: #1c0ccb;
-    text-decoration: none;
-  }
+.sidekickContainer a {
+  color: #1c0ccb;
+  text-decoration: none;
+}
 
-  .sidekickContainer a:hover {
-    color: #3b2af9;
-    text-decoration: underline;
-  }
-
+.sidekickContainer a:hover {
+  color: #3b2af9;
+  text-decoration: underline;
+}
 
 @media (max-width: 768px) {
   .sidekickContainer {
     padding: 0.625rem;
   }
 
-  .sidekickContainer h1 {
+  .sidekickContainer p,
+  .contactInfo p,
+  .sidekickContainer .highlightedText {
     font-size: 1.25rem;
+    line-height: 1.5;
   }
 
-  .sidekickContainer p {
-    font-size: 1.25rem;
-  }
-
-  /* Link styles */
   .contactInfo p {
     font-size: 1.5rem;
     /* line-height: 1; */
