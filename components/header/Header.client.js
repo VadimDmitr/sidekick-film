@@ -15,11 +15,6 @@ const Header = () => {
           />
         </>
       </Link>
-      {/* <div className={styles.marqueeContainer}>
-        <a href="tel:+19842224153" className={styles.marquee}>
-          CALL US 24/7 +1 984-222-4153
-        </a>
-      </div> */}
       <nav className={styles.nav}>
         {/* <Link href="/" className={styles.navlink}>
           Home
