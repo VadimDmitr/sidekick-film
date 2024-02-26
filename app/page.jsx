@@ -1,10 +1,10 @@
 import styles from './home.module.css';
-import VideoMuscle from './videoMuscle/page';
-import SidekickAd from './sidekickAd/page';
-import VideoComponent from './videoProjects/page';
-import VideoTraffic from './videoTraffic/page';
-import Contact from './contact/page';
-import ServicesUpPage from './servicesUpPage/page';
+import VideoMuscle from './components/videoMuscle/page';
+import SidekickAd from './components/sidekickAd/page';
+import VideoComponent from './components/videoProjects/page';
+import VideoTraffic from './components/videoTraffic/page';
+import Contact from './components/contact/page';
+import ServicesUpPage from './components/sevicesUpPage/page';
 
 export default function Home() {
   return (
