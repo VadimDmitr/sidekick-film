@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './servicesUp.module.css';
 
-const servicesUpPage = () => {
+const ServicesUpPage = () => {
   return (
     <div className={styles.contentContainer} id="services">
       <h1>Services</h1>
@@ -19,4 +19,4 @@ const servicesUpPage = () => {
   );
 };
 
-export default servicesUpPage;
+export default ServicesUpPage;
