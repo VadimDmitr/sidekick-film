@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './sidekickAd.module.css';
 
-const sidekickAd = () => {
+const SidekickAd = () => {
   return (
     <div className={styles.sidekickContainer}>
       <p>
@@ -50,4 +50,4 @@ const sidekickAd = () => {
   );
 };
 
-export default sidekickAd;
+export default SidekickAd;
