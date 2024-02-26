@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './videoTraffic.module.css';
 
-export default function videoTraffic() {
+export default function VideoTraffic() {
   return (
     <div
       className={`${styles.videoTrafficContainer} ${styles.videoTop}`}

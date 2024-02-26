@@ -1,8 +1,8 @@
 import { DM_Sans, Inter, Roboto_Condensed } from 'next/font/google';
 import './globals.css';
-import Header from '../../components/header/Header.client';
-import Footer from '../../components/footer/Footer.client';
-import BackToTopButton from '../../components/backToTopButton/backToTopButton';
+import Header from './components/header/Header.client';
+import Footer from './components/footer/Footer.client';
+import BackToTopButton from './components/backToTopButton/backToTopButton';
 
 const robotoCondensed = Roboto_Condensed({ subsets: ['latin'] });
 
