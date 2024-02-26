@@ -1,5 +1,4 @@
-import styles from './video.module.css';
-import Image from 'next/image';
+import styles from './videoProjects.module.css';
 
 const VideoComponent = () => {
   const videos = [

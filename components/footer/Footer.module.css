@@ -62,5 +62,6 @@
 
 .emailLink:hover {
   color: #4240c8; 
+  text-decoration: underline;
 }
 
