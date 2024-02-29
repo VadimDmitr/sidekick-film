@@ -5,10 +5,10 @@ import styles from './videoProjects.module.css';
 
 const VideoComponent = () => {
   const [isClient, setIsClient] = useState(false);
-  const [playing, setPlaying] = useState(Array(8).fill(false)); // Step 1: Initialize playing states for 8 videos
+  const [playing, setPlaying] = useState(Array(8).fill(false));
 
   useEffect(() => {
-    setIsClient(true); // This will set `isClient` to true in the client-side environment after the component mounts
+    setIsClient(true);
   }, []);
 
   const videos = [
