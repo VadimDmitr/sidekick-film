@@ -8,7 +8,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   overflow-x: hidden;
-  height: auto;  /* 12rem*/
+  height: auto; /* 12rem*/
   justify-content: center;
   align-items: center;
 }
@@ -33,6 +33,8 @@
   font-weight: bold;
   text-align: center;
   z-index: 1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
 }
 

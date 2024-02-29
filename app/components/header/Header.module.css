@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.98);;
+  background: rgba(0, 0, 0, 0.98);
   color: white;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -13,30 +13,6 @@
   position: relative;
   left: 2rem;
 }
-
-/* .marqueeContainer {
-  overflow: hidden;
-  position: relative; */
-  /* flex-grow: 1; Allows the container to take up available space */
-  /* display: flex; Centers the content horizontally */
-  /* justify-content: center; 
-  align-items: center; 
-}
-
-.marquee {
-  display: block;
-  white-space: nowrap;
-  color: white;
-  font-size: 1.3rem;
-  text-decoration: none;
-  animation: scroll 10s linear infinite;
-  padding: 0.5rem;
-} */
-
-/* @keyframes scroll {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-} */
 
 .nav {
   display: flex;
@@ -57,11 +33,17 @@
   background-color: #555;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nav {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
+
+/* @media (max-width: 768px) {
+  .nav {
+    font-size: 1.5rem;
+  }
+} */
 
 @media (max-width: 600px) {
   .header {

@@ -29,7 +29,7 @@ const BackToTopButton = () => {
   const backToTopButtonStyle = {
     position: 'fixed',
     bottom: '4rem',
-    right: '1rem',
+    right: '4rem',
     backgroundColor: 'transparent',
     color: '#4CAF50',
     border: 'none',
@@ -39,7 +39,8 @@ const BackToTopButton = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '2rem',
+    fontSize: '2.5rem',
+    // fontWeight: '800',
     cursor: 'pointer',
     zIndex: 1000,
     transition: 'opacity 0.3s ease',

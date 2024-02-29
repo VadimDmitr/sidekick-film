@@ -10,9 +10,9 @@
 
 .subscribeSection {
   text-align: center;
-  margin-bottom: 0.5rem; 
-  font-size: 1rem;
-  font-weight: bold; 
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .youtubeLinkContainer {
@@ -30,38 +30,38 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .combinedLink:hover {
   color: white;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 .textWithMargin {
   margin-right: 0.35rem;
 }
 
 .iconLink {
-  display: none; 
+  display: none;
 }
 
 .copyRight {
   font-family: inter;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   text-align: center;
-  margin-top: 0.3rem;  
+  margin-top: 0.3rem;
 }
 
-.copyRightText, .emailLink {
+.copyRightText,
+.emailLink {
   margin-left: 0.3rem;
   margin-bottom: 0.4rem;
-  color: #6a68d6; 
-  text-decoration: none; 
+  color: #6a68d6;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .emailLink:hover {
-  color: #4240c8; 
+  color: #4240c8;
   text-decoration: underline;
 }
-

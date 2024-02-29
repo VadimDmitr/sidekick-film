@@ -2,9 +2,10 @@ import styles from './home.module.css';
 import VideoMuscle from './components/videoMuscle/page';
 import SidekickAd from './components/sidekickAd/page';
 import VideoComponent from './components/videoProjects/page';
+import ServicesUpPage from './components/servicesUpPage/page';
 import VideoTraffic from './components/videoTraffic/page';
+import ServicesDownPage from './components/servicesDownPage/page';
 import Contact from './components/contact/page';
-import ServicesUpPage from './components/sevicesUpPage/page';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <VideoComponent />
         <ServicesUpPage />
         <VideoTraffic />
+        <ServicesDownPage />
         <Contact />
       </section>
     </>
