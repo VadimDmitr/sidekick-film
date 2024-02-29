@@ -59,6 +59,11 @@ const VideoComponent = () => {
               playbackRate={1.0}
               volume={0.8}
               muted={false}
+              config={{
+                youtube: {
+                  playerVars: { vq: 'highres' },
+                },
+              }}
             />
           </div>
         ))}
