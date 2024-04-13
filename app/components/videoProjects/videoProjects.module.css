@@ -25,11 +25,13 @@
 
 .videoItem {
   width: 100%;
-  padding-top: 60%; /* Increased for smaller icons */
+  padding-top: 60%; /* Maintains aspect ratio */
   position: relative;
+  border: 1.5px solid white; /*  white borders */
+  box-sizing: border-box;
 }
 
-.videoItem iframe {
+.reactPlayer {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +41,6 @@
 .videoItem:nth-child(-n+4) {
   margin-bottom: 2.5rem;
 }
-
 @media (max-width: 1200px) {
   .videosGrid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
