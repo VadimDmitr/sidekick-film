@@ -1,6 +1,6 @@
 .servicesContainer {
   position: relative;
-  height: 10vh;
+  height: 45vh;
   color: black;
   padding: 0rem;
   box-sizing: border-box;
@@ -8,28 +8,37 @@
   flex-direction: column;
   flex-wrap: wrap;
   overflow-x: hidden;
-  height: auto; /* 12rem*/
+  /* height: auto; 12rem */
   justify-content: center;
   align-items: center;
 }
 
-.backgroundVideo {
+/* .backgroundVideo {
   position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
-  /* min-height: 100%; */
   width: auto;
-  /* height: auto; */
   z-index: -1;
   background-size: cover;
   overflow: hidden;
+} */
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;          /* Align video to the top of the container */
+  left: 0;         /* Align video to the left of the container */
+  width: 100%;     /* Set video width to cover full width of the container */
+  height: 100%;    /* Set video height to cover full height of the container */
+  object-fit: cover; /* Cover the container fully while maintaining aspect ratio */
+  z-index: -1;     /* Keep the video in the background */
 }
 
+
 .serviceTitle {
-  color: rgb(30, 28, 28);
+  color: white;
   font-family: Noto Serif Black;
-  font-size: 5rem;
+  font-size: 11rem;
   font-weight: bold;
   text-align: center;
   z-index: 1;
