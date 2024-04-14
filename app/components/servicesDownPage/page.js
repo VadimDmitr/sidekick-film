@@ -17,7 +17,7 @@ const servicesDownPage = () => {
         Plug video into all your communications&mdash;it&rsquo;s a serious game
         changer!
       </p> */}
-       <h2>Sidekick Services</h2>
+      <h2>Sidekick Services</h2>
       <div className={styles.serviceGrid}>
         <div>Event Promotion</div>
         <div>Fundraising</div>
