@@ -6,36 +6,35 @@ const SidekickAd = () => {
     <div className={styles.sidekickContainer}>
       <p>
         Sidekick leverages creative video content with strategic messaging to
-        build higher awareness, and loyalty to your brand & organization.
+        build higher awareness and loyalty to your brand.
       </p>
       <p>
         The extremely competitive world of Internet and email marketing demands
-        content to be expertly crafted, and memorable to reach the target
-        audience.
+        content to be expertly crafted and memorable to reach target audience.
       </p>
       <p className={styles.highlightedText}>
-        Two-thirds of consumers say they’d rather watch a video to learn about a
-        product or service than read about it.
+        Two-thirds of consumers prefer to watch a video to learn about a product
+        or service instead of reading about it.
       </p>
       <p>That’s why video is the KING of the Internet!</p>
       <p>
-        Video production used to be tedious, slow, and expensive. Thankfully,
-        not anymore.
+        Video production used to be tedious, slow and expensive. Thankfully, not
+        anymore.
       </p>
       <p>
-        Sidekick utilizes high-tech equipment, hyper-efficient editing software,
-        with tried & true sound, lighting, and filming practices.
+        Sidekick utilizes high-tech equipment, hyper-efficient editing software
+        with proven sound, lighting and filming practices.
       </p>
       <p>
-        The result, stunning & effective media at a price that won’t bust your
+        The result is stunning & effective media at a price that won’t bust your
         marketing budget.
       </p>
       <p className={styles.highlightedText}>
-        Meet your new video production team
+        Meet your new video production team!
       </p>
       <p>
-        We promise, your initial consultation will be wildly informative, and
-        yet totally-free.
+        We promise your initial consultation will be wildly informative and
+        totally free.
       </p>
       <div className={styles.contactInfo}>
         <p>

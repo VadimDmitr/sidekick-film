@@ -4,22 +4,20 @@ import styles from './servicesDown.module.css';
 const servicesDownPage = () => {
   return (
     <div className={styles.contentContainer}>
-      <h1>
-        Shouldn’t you employ the most powerful communication tool in history?
-      </h1>
-      <p>We&rsquo;re ready to produce your custom videos.</p>
+      <h1>We are ready to produce your custom videos.</h1>
+      <p></p>
       <p>
-        More descriptive than a thousand words, Sidekick videos combine a
-        thoughtful orchestration of imagery, narration, music and visual effects
-        to deliver a meaningful ‘experience’ for your audience. The memorable
-        impression of a quality video can improve the ROI value for all your
+        Sidekick designs thoughtful orchestration of imagery, narration, music
+        and visual effects. Delivering this meaningful experience to your
+        audience, leaves a memorable impression improving the value for all
         communication channels.
       </p>
-      <h2>Better media made Simple.</h2>
-      <p>
+      <h1>Simply better media.</h1>
+      {/* <p>
         Plug video into all your communications&mdash;it&rsquo;s a serious game
         changer!
-      </p>
+      </p> */}
+       <h2>Sidekick Services</h2>
       <div className={styles.serviceGrid}>
         <div>Event Promotion</div>
         <div>Fundraising</div>

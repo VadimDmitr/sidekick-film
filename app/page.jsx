@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className={styles.backgroundImageContainer}>
         <div className={styles.textOverlay}>
-          <h1 className={styles.welcomeTitle}>Are you invisible?</h1>
+          <h1 className={styles.welcomeTitle}>Do you feel invisible?</h1>
           <p className={styles.welcomeText}>Video will get you noticed.</p>
         </div>
       </div>
