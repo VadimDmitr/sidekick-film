@@ -38,6 +38,7 @@
 @media (max-width: 1250px) {
   .servicesContainer {
     flex-direction: column;
+    height: 23vh;
     align-items: center;
   }
 
@@ -49,7 +50,7 @@
 
 @media (max-width: 767px) {
   .servicesContainer {
-    height: 20vh;
+    height: 23vh;
   }
 
   .backgroundVideo {
