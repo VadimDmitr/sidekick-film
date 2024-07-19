@@ -1,6 +1,6 @@
 .servicesContainer {
   position: relative;
-  height: 60vh;
+  height: 73vh;
   color: black;
   padding: 0rem;
   box-sizing: border-box;
@@ -8,7 +8,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   overflow-x: hidden;
-  /* height: auto; 12rem */
   justify-content: center;
   align-items: center;
 }
@@ -20,19 +19,7 @@
   width: 100%; /* Set video width to cover full width of the container */
   height: 100%; /* Set video height to cover full height of the container */
   object-fit: cover; /* Cover the container fully while maintaining aspect ratio */
-  z-index: -1; /* Keep the video in the background */
-}
-
-.serviceTitle {
-  color: white;
-  font-family: Noto Serif Black;
-  font-size: 10rem;
-  font-weight: bold;
-  text-align: center;
-  z-index: 1;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 100%;
+  object-position: center 25%; /* Adjust the position */
 }
 
 @media (max-width: 1250px) {
@@ -40,11 +27,6 @@
     flex-direction: column;
     height: 23vh;
     align-items: center;
-  }
-
-  .serviceTitle {
-    margin-bottom: 2rem;
-    font-size: 6rem;
   }
 }
 
@@ -56,9 +38,6 @@
   .backgroundVideo {
     height: 100%;
     object-fit: cover;
-  }
-
-  .serviceTitle {
-    font-size: 3rem;
+    /* object-position: center 10%; Adjust the position for smaller screens */
   }
 }
