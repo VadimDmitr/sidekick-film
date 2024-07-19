@@ -21,8 +21,8 @@ const Footer = () => {
         >
           <span className={styles.textWithMargin}>SIDEKICK YOUTUBE</span>
           <FaYoutube size="1.4em" color="#FF0000" />
+          <span className={styles.textWithMargin}> CHANNEL</span>
         </a>
-        <span className={styles.textWithMargin}> CHANNEL</span>
       </div>
       <div className={styles.copyRight}>
         <div className={styles.copyRightText}>

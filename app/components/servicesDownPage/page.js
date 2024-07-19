@@ -5,19 +5,16 @@ const servicesDownPage = () => {
   return (
     <div className={styles.contentContainer}>
       <h1>We are ready to produce your custom videos.</h1>
-      <p></p>
       <p>
         Sidekick designs thoughtful orchestration of imagery, narration, music
         and visual effects. Delivering this meaningful experience to your
-        audience, leaves a memorable impression improving the value for all
+        audience creating a memorable impression improving the value for all
         communication channels.
       </p>
-      <h1>Simply better media.</h1>
-      {/* <p>
-        Plug video into all your communications&mdash;it&rsquo;s a serious game
-        changer!
-      </p> */}
-      <h2>Sidekick Services</h2>
+      <div className={styles.simplyBetterMedia}>Simply better media.</div>
+      <div className={styles.blackBar}>
+        <span>Sidekick Services</span>
+      </div>
       <div className={styles.serviceGrid}>
         <div>Event Promotion</div>
         <div>Fundraising</div>

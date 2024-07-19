@@ -38,7 +38,8 @@
   text-decoration: underline;
 }
 .textWithMargin {
-  margin-right: 0.35rem;
+  margin-right: 0.3rem;
+  margin-left: 0.15rem;
 }
 
 .iconLink {

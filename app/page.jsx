@@ -17,8 +17,9 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.section}>
-        <VideoMuscle />
+        
         <SidekickAd />
+        <VideoMuscle />
         <VideoComponent />
         <ServicesUpPage />
         <VideoTraffic />

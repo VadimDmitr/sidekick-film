@@ -10,11 +10,11 @@ const SidekickAd = () => {
       </p>
       <p>
         The extremely competitive world of Internet and email marketing demands
-        content to be expertly crafted and memorable to reach target audience.
+        content to be expertly crafted and memorable to reach target audiences.
       </p>
       <p className={styles.highlightedText}>
-        Two-thirds of consumers prefer to watch a video to learn about a product
-        or service instead of reading about it.
+        Two-thirds of consumers prefer to watch videos instead of reading to
+        learn about a product or service.
       </p>
       <p>That’s why video is the KING of the Internet!</p>
       <p>
@@ -26,7 +26,7 @@ const SidekickAd = () => {
         with proven sound, lighting and filming practices.
       </p>
       <p>
-        The result is stunning & effective media at a price that won’t bust your
+        The result is stunning and effective media at a price that won’t bust your
         marketing budget.
       </p>
       <p className={styles.highlightedText}>
