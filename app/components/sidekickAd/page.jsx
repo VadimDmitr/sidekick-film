@@ -26,8 +26,8 @@ const SidekickAd = () => {
         with proven sound, lighting and filming practices.
       </p>
       <p>
-        The result is stunning and effective media at a price that won’t bust your
-        marketing budget.
+        The result is stunning and effective media at a price that won’t bust
+        your marketing budget.
       </p>
       <p className={styles.highlightedText}>
         Meet your new video production team!
