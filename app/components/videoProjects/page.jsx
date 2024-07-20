@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
+import Image from 'next/image';
 import styles from './videoProjects.module.css';
 
 const VideoComponent = () => {
@@ -38,7 +39,14 @@ const VideoComponent = () => {
   return (
     <div className={styles.container} id="ourWork">
       <div className={styles.videoTitle}>
-        <p>Sidekick Projects</p>
+        <Image
+          src="/Sidekick_projects.jpg"
+          alt="Sidekick Projects"
+          layout="responsive"
+          width={500}
+          height={200}
+          className={styles.responsiveImage}
+        />
       </div>
       <div className={styles.videosGrid}>
         {videos.map((video, index) => (
