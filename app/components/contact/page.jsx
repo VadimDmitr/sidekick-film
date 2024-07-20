@@ -12,15 +12,16 @@ const Contact = () => {
     <>
       <div className={styles.topBar}></div>
       <div id="contact" className={styles.contact}>
-        {/* <h1>Sidekick Film Co.</h1> */}
         <div className={styles.logoImageWrapper}>
-          <Image
-            src="/logoContacts.webp"
-            alt="Sidekick Film Co. Logo"
-            className={styles.logoContacts}
-            width={335}
-            height={95}
-          />
+          <div className={styles.imageContainer}>
+            <Image
+              src="/Sidekick_media.jpg"
+              alt="Sidekick media"
+              layout="fill"
+              objectFit="contain"
+              className={styles.responsiveImage}
+            />
+          </div>
         </div>
         <p className={styles.producer}>Dan Schaefer | Producer</p>
         <p className={styles.contactUs}>Contact Us</p>
