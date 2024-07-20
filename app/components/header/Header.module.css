@@ -4,7 +4,7 @@
   align-items: center;
   background: rgba(0, 0, 0, 0.98);
   color: white;
-  padding: 0.5rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@
 .navlink {
   color: white;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.6rem;
   transition: background-color 0.3s;
 }
 
@@ -36,6 +36,7 @@
 @media (max-width: 1200px) {
   .nav {
     font-size: 1.6rem;
+    gap: 0.6rem;
   }
 }
 
@@ -63,10 +64,10 @@
     align-items: center;
     width: 100%;
     /* padding-top: 1rem; */
-    gap: 0.1px;
+    gap: 10px;
   }
 
   .navlink {
-    padding: 0.25rem;
+    padding: 0.35rem;
   }
 }
