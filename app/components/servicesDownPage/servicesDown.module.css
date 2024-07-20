@@ -1,5 +1,5 @@
 .contentContainer {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   padding-bottom: 0.2rem;
   color: #000;
   text-align: center;
@@ -30,23 +30,27 @@
 }
 
 .blackBar {
-  background-color: #000;
-  color: #fff;
-  padding: 0.5rem 0;
-  margin: 2rem 0;
+  padding: 0rem 0 0 0;
 }
 
-.blackBar span {
-  font-size: 2.6rem;
-  font-weight: bold;
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto;
 }
 
 .serviceGrid {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -63,9 +67,15 @@
   .contentContainer p,
   .serviceGrid {
     font-size: 1.25rem;
+    gap: 1rem;
   }
 
   .serviceGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageContainer {
+    height: 8rem;
+    margin-bottom: 0rem;
   }
 }

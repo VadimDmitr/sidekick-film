@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './servicesDown.module.css';
 
 const servicesDownPage = () => {
@@ -13,7 +14,15 @@ const servicesDownPage = () => {
       </p>
       <div className={styles.simplyBetterMedia}>Simply better media.</div>
       <div className={styles.blackBar}>
-        <span>Sidekick Services</span>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/Sidekick_services.jpg"
+            alt="Sidekick Services"
+            layout="fill"
+            objectFit="contain"
+            className={styles.responsiveImage}
+          />
+        </div>
       </div>
       <div className={styles.serviceGrid}>
         <div>Event Promotion</div>

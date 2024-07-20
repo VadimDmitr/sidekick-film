@@ -4,7 +4,7 @@
   align-items: center;
   background-color: rgba(0, 0, 0);
   padding: 0.5rem 5rem 8rem 5rem;
-  gap: 0px 20px 20px 20px;
+  gap: 0rem 1.25rem 1.25rem 1.25rem;
 }
 
 .videoTitle {
@@ -55,8 +55,8 @@
   }
 
   .videoTitle {
-    height: 100px;
-    width: 600px;
+    height: 6.25rem;
+    width: 37.5rem;
     padding-bottom: 5rem;
   }
 
@@ -75,8 +75,8 @@
   }
 
   .videoTitle {
-    height: 110px;
-    width: 330px;
+    height: 8rem;
+    width: 23rem;
     padding: 2rem 0rem 0rem 0rem;
     /* font-size: 5rem; */
   }
