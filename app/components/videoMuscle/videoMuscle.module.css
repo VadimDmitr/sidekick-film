@@ -32,12 +32,13 @@
 
 @media (max-width: 767px) {
   .servicesContainer {
-    height: 23vh;
+    height: 25vh;
   }
 
   .backgroundVideo {
     height: 100%;
     object-fit: cover;
-    /* object-position: center 10%; Adjust the position for smaller screens */
+    object-position: center 50%;
+   
   }
 }
