@@ -29,7 +29,7 @@ const Header = () => {
           Projects
         </a>
         <a href="#services" className={styles.navlink}>
-          Service
+          Services
         </a>
         <Link href="#contact" className={styles.navlink}>
           Contact
