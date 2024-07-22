@@ -3,7 +3,7 @@ import styles from './servicesUp.module.css';
 
 const ServicesUpPage = () => {
   return (
-    <div className={styles.contentContainer} id="services">
+    <div className={styles.contentContainer}>
       <h2>Why Video Matters…</h2>
       <p>
         Everyone with a Smart Phone is viewing video content. Over 254 million

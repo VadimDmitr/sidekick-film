@@ -4,10 +4,7 @@ import styles from './videoTraffic.module.css';
 
 export default function VideoTraffic() {
   return (
-    <div
-      className={`${styles.videoTrafficContainer} ${styles.videoTop}`}
-      id="services"
-    >
+    <div className={`${styles.videoTrafficContainer} ${styles.videoTop}`}>
       <video
         autoPlay
         muted
