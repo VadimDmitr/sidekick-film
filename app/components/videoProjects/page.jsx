@@ -42,9 +42,8 @@ const VideoComponent = () => {
         <Image
           src="/Sidekick_projects.jpg"
           alt="Sidekick Projects"
-          layout="responsive"
-          width={500}
-          height={200}
+          width={800}
+          height={250}
           className={styles.responsiveImage}
         />
       </div>
