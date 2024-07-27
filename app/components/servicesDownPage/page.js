@@ -18,8 +18,8 @@ const servicesDownPage = () => {
           <Image
             src="/Sidekick_services.jpg"
             alt="Sidekick Services"
-            layout="fill"
-            objectFit="contain"
+            fill
+            style={{ objectFit: 'contain' }}
             className={styles.responsiveImage}
           />
         </div>

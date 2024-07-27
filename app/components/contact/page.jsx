@@ -17,8 +17,8 @@ const Contact = () => {
             <Image
               src="/Sidekick_media.jpg"
               alt="Sidekick media"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: 'contain' }}
               className={styles.responsiveImage}
             />
           </div>
