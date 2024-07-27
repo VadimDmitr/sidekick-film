@@ -61,12 +61,12 @@
 
   .contentContainer h1,
   .contentContainer h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .contentContainer p,
   .serviceGrid {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     gap: 1rem;
   }
 

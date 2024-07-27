@@ -36,17 +36,16 @@
 .contact .contactUs {
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 0.4rem 0;
 }
 
 .contact .producer {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 
 .contact p,
 .contact strong {
   font-size: 1.49rem;
-  margin: 0.35rem 0;
+  margin: 0.4rem 0;
 }
 
 .contactLink {
@@ -95,7 +94,7 @@
 
   .contact p,
   .contact strong {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .contactButton {
