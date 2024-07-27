@@ -25,13 +25,6 @@
   }
 }
 
-/* @media (orientation: landscape) {
-  .backgroundVideo {
-    height: 150vh;
-    min-height: 0;
-  }
-} */
-
 .videoTop {
   align-items: flex-start;
 }

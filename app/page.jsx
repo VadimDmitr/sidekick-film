@@ -3,7 +3,7 @@ import VideoMuscle from './components/videoMuscle/page';
 import SidekickAd from './components/sidekickAd/page';
 import VideoComponent from './components/videoProjects/page';
 import ServicesUpPage from './components/servicesUpPage/page';
-import VideoTraffic from './components/videoTraffic/page';
+import VideoMountains from './components/videoMountains/page';
 import ServicesDownPage from './components/servicesDownPage/page';
 import Contact from './components/contact/page';
 
@@ -21,7 +21,7 @@ export default function Home() {
         <VideoMuscle />
         <VideoComponent />
         <ServicesUpPage />
-        <VideoTraffic />
+        <VideoMountains />
         <ServicesDownPage />
         <Contact />
       </section>
