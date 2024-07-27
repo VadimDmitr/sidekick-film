@@ -1,9 +1,9 @@
 import styles from './home.module.css';
-import VideoMuscle from './components/videoMuscle/page';
+import VideoFlag from './components/videoFlag/page';
 import SidekickAd from './components/sidekickAd/page';
 import VideoComponent from './components/videoProjects/page';
 import ServicesUpPage from './components/servicesUpPage/page';
-import VideoTraffic from './components/videoTraffic/page';
+import VideoMountains from './components/videoMountains/page';
 import ServicesDownPage from './components/servicesDownPage/page';
 import Contact from './components/contact/page';
 
@@ -18,10 +18,10 @@ export default function Home() {
       </div>
       <section className={styles.section}>
         <SidekickAd />
-        <VideoMuscle />
+        <VideoFlag />
         <VideoComponent />
         <ServicesUpPage />
-        <VideoTraffic />
+        <VideoMountains />
         <ServicesDownPage />
         <Contact />
       </section>

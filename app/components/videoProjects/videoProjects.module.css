@@ -50,6 +50,10 @@
 }
 
 @media (max-width: 1200px) {
+  .container {
+    padding-bottom: 4.5rem;
+  }
+
   .videosGrid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
   }
@@ -60,22 +64,26 @@
     padding-bottom: 5rem;
   }
 
-  .videoItem:nth-child(-n + 4) {
-    margin-bottom: 1.5rem;
+  .videoItem:nth-child(-n + 8) {
+    margin-bottom: 0.5rem;
   }
 }
 
 @media (max-width: 600px) {
   .container {
-    padding: 0rem 1rem 2rem 1rem;
+    padding: 0rem 1rem 3rem 1rem;
   }
 
   .videosGrid {
     grid-template-columns: 1fr; /* 1 column for small screens */
   }
 
+  .videoItem:nth-child(-n + 8) {
+    margin-bottom: 0rem;
+  }
+
   .videoTitle {
-    height: 8rem;
+    height: 7rem;
     width: 23rem;
     padding: 2rem 0rem 0rem 0rem;
     /* font-size: 5rem; */
