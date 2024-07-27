@@ -29,7 +29,7 @@ const BackToTopButton = () => {
   const backToTopButtonStyle = {
     position: 'fixed',
     bottom: '4rem',
-    right: '4rem',
+    right: '2rem',
     backgroundColor: 'transparent',
     color: '#4CAF50',
     border: 'none',
