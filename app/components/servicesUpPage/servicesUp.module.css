@@ -1,0 +1,46 @@
+.contentContainer {
+  padding: 2rem ;
+  padding-bottom: 0.2rem;
+  color: #000;
+  text-align: center;
+  box-sizing: border-box;
+  background: #fff;
+  margin: auto;
+}
+
+.contentContainer h1 {
+  font-size: 2.7rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.contentContainer h2 {
+  font-size: 2.25rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.contentContainer p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    padding: 0.625rem;
+  }
+
+  .contentContainer h1 {
+    font-size: 2rem;
+  }
+
+  .contentContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .contentContainer p {
+    font-size: 1.25rem;
+  }
+}
