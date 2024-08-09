@@ -103,6 +103,7 @@
   }
 
   .imageContainer {
-    height: 6.4rem;
+    width: 18rem;
+    height: 5rem;
   }
 }
