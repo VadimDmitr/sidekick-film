@@ -54,7 +54,13 @@
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .imageContainer {
+    height: 8.5rem;
+  }
+}
+
+@media (max-width: 600px) {
   .contentContainer {
     padding: 0.625rem;
   }
@@ -75,8 +81,9 @@
   }
 
   .imageContainer {
-    width: 20rem;
-    height: 6rem;
+    /* width: 20rem; */
+    height: 5rem;
     margin-bottom: 0rem;
+    /* margin-left: 1.5rem; */
   }
 }
