@@ -1,11 +1,11 @@
 .contentContainer {
-  padding: 2rem ;
+  padding: 0.4rem;
   padding-bottom: 0.2rem;
   color: #000;
   text-align: center;
   box-sizing: border-box;
   background: #fff;
-  margin: auto;
+  margin: 1rem 3rem 1rem 3rem;
 }
 
 .contentContainer h1 {
@@ -30,6 +30,7 @@
 @media (max-width: 768px) {
   .contentContainer {
     padding: 0.625rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
   }
 
   .contentContainer h1 {
