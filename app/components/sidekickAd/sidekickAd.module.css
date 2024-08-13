@@ -5,7 +5,7 @@
   text-align: center;
   box-sizing: border-box;
   background: #fff;
-  margin: auto;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .sidekickContainer p {
@@ -43,6 +43,7 @@
 
 @media (max-width: 768px) {
   .sidekickContainer {
+    margin: 0.5rem 0rem 0.5rem 0rem;
     padding: 0.625rem;
   }
 
