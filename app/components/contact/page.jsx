@@ -28,7 +28,7 @@ const Contact = () => {
         <p>
           <strong>Phone: </strong>
           <a href="tel:19842224153" className={styles.contactLink}>
-            +1 984-222-4153
+            <span>+1 984-222-4153</span>
           </a>
         </p>
         <p>
@@ -37,7 +37,7 @@ const Contact = () => {
             href={`mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
             className={styles.contactLink}
           >
-            {emailTo}
+            <span>{emailTo}</span>
           </a>
         </p>
         <p>
@@ -48,7 +48,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className={styles.contactLink}
           >
-            Cary, North Carolina
+            <span>Cary, North Carolina</span>
           </a>
         </p>
         <a
