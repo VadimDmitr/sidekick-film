@@ -10,13 +10,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
+        {/* <link rel="apple-touch-icon" href="/favicon.png"></link>
         <link
           rel="icon"
           type="image/x-icon"
-          href="/favicon.ico?v=2"
+          href="/favicon.png"
           sizes="any"
-        />
+        /> */}
         <meta name="theme-color" />
       </head>
       <body
