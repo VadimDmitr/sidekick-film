@@ -63,11 +63,13 @@
 
 @media (max-width: 600px) {
   .contentContainer {
+    margin: 0.5rem;
     padding: 0.625rem;
   }
 
   .contentContainer h1,
   .contentContainer h2 {
+    margin-bottom: 0.5rem;
     font-size: 2.2rem;
   }
 
@@ -75,10 +77,12 @@
   .serviceGrid {
     font-size: 1.4rem;
     gap: 1rem;
+    margin: 0rem 0rem 0.5rem 0rem;
   }
 
   .serviceGrid {
     grid-template-columns: repeat(2, 1fr);
+    font-size: 1.6rem;
   }
 
   .imageContainer {
