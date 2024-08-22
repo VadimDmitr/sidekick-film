@@ -10,7 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Professional Video Production Services | Sidekick Media USA</title>
+        <title>
+          Professional Video Production Services | Sidekick Media USA
+        </title>
         <meta
           name="description"
           content="Sidekick Media offers professional video production services in Raleigh, Cary, Durham, Research Triangle Area (RTP), North Carolina. Get noticed with our high-quality creative video content."
