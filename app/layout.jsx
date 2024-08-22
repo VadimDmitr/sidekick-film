@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
           href="/favicon.png"
           sizes="any"
         /> */}
-        <meta name="theme-color" />
       </head>
       <body
         className={robotoCondensed.className}
