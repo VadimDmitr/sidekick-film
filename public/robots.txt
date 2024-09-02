@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.sidekickmediausa.com
+
+# Sitemaps
+Sitemap: https://www.sidekickmediausa.com/sitemap.xml
