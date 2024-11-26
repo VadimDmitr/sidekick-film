@@ -15,7 +15,11 @@ export default function RootLayout({ children }) {
         </title>
         <meta
           name="description"
-          content="Sidekick Media offers professional video production services in Cary, North Carolina. Get noticed with our high-quality creative video content for businesses of all sizes."
+          content="Sidekick Media offers professional video production services in the Triangle area, including Cary, Raleigh, Durham, Chapel Hill, and other cities in North Carolina. Get noticed with our high-quality creative video content."
+        />
+        <meta
+          name="keywords"
+          content="video production Cary, video production Raleigh, video production Durham, video production Chapel Hill, Triangle video production, professional video services North Carolina"
         />
         <meta name="theme-color" content="#000000" />
         <link
