@@ -7,7 +7,7 @@ module.exports = {
   exclude: [
     '/components/contact',
     '/components/servicesDownPage',
-    '/components//servicesUpPage',
+    '/components/servicesUpPage',
     '/components/sidekickAd',
     '/components/videoFlag',
     '/components/videoMountains',
