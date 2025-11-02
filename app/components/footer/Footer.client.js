@@ -35,7 +35,21 @@ const Footer = () => {
           </a>
         </div>
 
-        <div>COPYRIGHT © 2024 ALL RIGHTS RESERVED.</div>
+        {
+          // dynamic year / range: use repo start year 2023 as detected from git
+        }
+        <div>
+          {(() => {
+            const startYear = 2023;
+            const currentYear = new Date().getFullYear();
+            const yearText = startYear && startYear < currentYear ? `${startYear}\u2013${currentYear}` : `${currentYear}`;
+            return (
+              <span>
+                © {yearText} Sidekick Film — Built with <span aria-hidden="true">❤️</span>
+              </span>
+            );
+          })()}
+        </div>
       </div>
     </footer>
   );
