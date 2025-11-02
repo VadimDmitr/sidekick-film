@@ -28,10 +28,14 @@ export default function RootLayout({ children }) {
           href="/app/favicon.ico"
           sizes="any"
         />
-        {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" /> */}
+        {/* Use an existing high-resolution site image as a temporary/favicon and
+            Apple touch icon. Replace these with properly sized PNG/SVG assets
+            later if you want a crisp icon on all devices. */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/Sidekick_logo_reverse_copy.jpg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/Sidekick_logo_reverse_copy.jpg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/Sidekick_logo_reverse_copy.jpg" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/Sidekick_logo_reverse_copy.jpg" color="#000000" />
       </head>
       <body
         className={robotoCondensed.className}
