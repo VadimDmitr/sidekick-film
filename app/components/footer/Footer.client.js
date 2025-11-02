@@ -42,7 +42,7 @@ const Footer = () => {
           {(() => {
             const startYear = 2007;
             const currentYear = new Date().getFullYear();
-            const yearText = startYear && startYear < currentYear ? `${startYear}\u2007${currentYear}` : `${currentYear}`;
+            const yearText = startYear && startYear < currentYear ? `${startYear}\u2013${currentYear}` : `${currentYear}`;
             return (
               <span>
                 © {yearText} Sidekick Film — Built with <span aria-hidden="true">❤️</span>
