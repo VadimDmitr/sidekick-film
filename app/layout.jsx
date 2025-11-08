@@ -8,7 +8,7 @@ const robotoCondensed = Roboto_Condensed({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
   const SITE_URL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sidekickmediausa.com';
-  const OG_IMAGE = `${SITE_URL}/mainPage.webp`;
+  const OG_IMAGE = `${SITE_URL}/og/og-image-1200x630.svg`;
   return (
     <html lang="en">
       <head>
@@ -36,20 +36,13 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="Professional Video Production Services | Sidekick Media USA" />
         <meta name="twitter:description" content="Sidekick Media offers professional video production services in the Triangle area — high-quality creative video content to get you noticed." />
         <meta name="twitter:image" content={OG_IMAGE} />
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="/app/favicon.ico"
-          sizes="any"
-        />
-        {/* Use an existing high-resolution site image as a temporary/favicon and
-            Apple touch icon. Replace these with properly sized PNG/SVG assets
-            later if you want a crisp icon on all devices. */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/Sidekick_logo_reverse_copy.jpg" />
+        {/* SVG favicon (modern browsers) + fallbacks to existing image for older devices */}
+        <link rel="icon" href="/icons/sidekick-favicon.svg" type="image/svg+xml" />
         <link rel="icon" type="image/png" sizes="32x32" href="/Sidekick_logo_reverse_copy.jpg" />
         <link rel="icon" type="image/png" sizes="16x16" href="/Sidekick_logo_reverse_copy.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/Sidekick_logo_reverse_copy.jpg" />
+        <link rel="mask-icon" href="/icons/sidekick-safari-pinned-tab.svg" color="#000000" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/Sidekick_logo_reverse_copy.jpg" color="#000000" />
       </head>
       <body
         className={robotoCondensed.className}
