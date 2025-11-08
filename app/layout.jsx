@@ -7,6 +7,8 @@ import BackToTopButton from './components/backToTopButton/backToTopButton';
 const robotoCondensed = Roboto_Condensed({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
+  const SITE_URL = process.env.SITE_URL || 'https://example.com';
+  const OG_IMAGE = `${SITE_URL}/mainPage.webp`;
   return (
     <html lang="en">
       <head>
@@ -22,6 +24,18 @@ export default function RootLayout({ children }) {
           content="video production Cary, video production Raleigh, video production Durham, video production Chapel Hill, Triangle video production, professional video services North Carolina"
         />
         <meta name="theme-color" content="#000000" />
+        {/* Open Graph / Twitter meta for better social previews. Set SITE_URL in env to your production URL. */}
+        <link rel="canonical" href={`${SITE_URL}/`} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Professional Video Production Services | Sidekick Media USA" />
+        <meta property="og:description" content="Sidekick Media offers professional video production services in the Triangle area, including Cary, Raleigh, Durham, Chapel Hill, and other cities in North Carolina. Get noticed with our high-quality creative video content." />
+        <meta property="og:url" content={`${SITE_URL}/`} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Professional Video Production Services | Sidekick Media USA" />
+        <meta name="twitter:description" content="Sidekick Media offers professional video production services in the Triangle area — high-quality creative video content to get you noticed." />
+        <meta name="twitter:image" content={OG_IMAGE} />
         <link
           rel="icon"
           type="image/x-icon"
