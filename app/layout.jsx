@@ -7,7 +7,7 @@ import BackToTopButton from './components/backToTopButton/backToTopButton';
 const robotoCondensed = Roboto_Condensed({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
-  const SITE_URL = process.env.SITE_URL || 'https://example.com';
+  const SITE_URL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sidekickmediausa.com';
   const OG_IMAGE = `${SITE_URL}/mainPage.webp`;
   return (
     <html lang="en">
