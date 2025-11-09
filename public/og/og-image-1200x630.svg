@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#111111" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)" />
+  <!-- center the site logo (uses existing public asset) -->
+  <image href="/Sidekick_logo_reverse_copy.jpg" x="150" y="70" width="900" height="390" preserveAspectRatio="xMidYMid meet" />
+  <!-- subtle footer text -->
+  <text x="50%" y="565" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.85" font-family="Arial, Helvetica, sans-serif" font-size="28">Sidekick Media USA — Professional Video Production</text>
+</svg>
