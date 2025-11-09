@@ -1,4 +1,5 @@
 import { DM_Sans, Inter, Roboto_Condensed } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import Header from './components/header/Header.client';
 import Footer from './components/footer/Footer.client';
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <BackToTopButton />
           <Footer />
+          <Analytics />
         </div>
       </body>
     </html>
