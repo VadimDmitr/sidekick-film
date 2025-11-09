@@ -19,7 +19,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="video production Cary, video production Raleigh, video production Durham, video production Chapel Hill, Triangle video production, professional video services North Carolina"
+          content="video production company, video content creation, local videographer, independent film production, business video services, promotional video production, event videography, video marketing strategy, brand video production, affordable video production, professional video editing, commercial video services, video storytelling, corporate video production, digital video content, social media video content, video production Cary NC, video production Raleigh NC, video production prices, professional camera operator, video content strategy, video production packages, custom video production, short film production, music video production, training video production, real estate video production, product demo videos, company profile videos, video production team near me, video production studio rental, 4K video production, video production equipment rental, video production consultation, video marketing expert"
         />
       </Head>
       <div className={styles.backgroundImageContainer}>
