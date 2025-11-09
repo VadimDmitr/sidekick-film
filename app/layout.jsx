@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="keywords"
-          content="video production Cary, video production Raleigh, video production Durham, video production Chapel Hill, Triangle video production, professional video services North Carolina"
+          content="independent filmmakers near me, video production company near me, local video production, commercial video production, corporate video production, video content creator, video marketing services, professional videographer, creative video production, video production studio, video production agency, film production services, video production Cary, video production Raleigh, video production Durham, video production Chapel Hill, Triangle video production, professional video services North Carolina, corporate video maker near me, commercial video production near me, video advertising agency, brand video production, product video production, promotional video services, video content marketing, video production costs, best video production company, wedding videographer near me, event video production, aerial video production, drone video services, youtube video production, video editing services near me, professional video company, local film production, video production quote"
         />
         <meta name="theme-color" content="#000000" />
         {/* Open Graph / Twitter meta for better social previews. Set SITE_URL in env to your production URL. */}
