@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
           content="Sidekick Media offers professional video production services in the Triangle area — high-quality creative video content to get you noticed."
         />
         <meta name="twitter:image" content={OG_IMAGE} />
-        {/* SVG favicon (modern browsers) + fallbacks to existing image for older devices */}
+        {/* SVG favicon (modern browsers) + PNG fallbacks */}
         <link
           rel="icon"
           href="/icons/sidekick-favicon.svg"
@@ -70,10 +70,14 @@ export default function RootLayout({ children }) {
           sizes="16x16"
           href="/icons/sidekick-16x16.png"
         />
+        {/* Apple/iOS home screen icon - use working logo */}
         <link
           rel="apple-touch-icon"
-          sizes="180x180"
-          href="/icons/sidekick-apple-touch-icon-180x180.png"
+          href="/Sidekick_logo_reverse_copy.jpg"
+        />
+        <link
+          rel="apple-touch-icon-precomposed"
+          href="/Sidekick_logo_reverse_copy.jpg"
         />
         <link
           rel="mask-icon"
