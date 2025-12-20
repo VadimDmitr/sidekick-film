@@ -8,15 +8,14 @@
   "scope": "/",
   "icons": [
     {
-      "src": "/Sidekick_logo_reverse_copy.jpg",
-      "sizes": "192x192 512x512",
-      "type": "image/jpeg",
-      "purpose": "any"
-    },
-    {
-      "src": "/icons/sidekick-favicon.svg",
+      "src": "/icons/sidekick-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/sidekick-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     }
   ]
 }
