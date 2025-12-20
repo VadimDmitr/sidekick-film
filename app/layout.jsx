@@ -62,18 +62,18 @@ export default function RootLayout({ children }) {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/Sidekick_logo_reverse_copy.jpg"
+          href="/icons/sidekick-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/Sidekick_logo_reverse_copy.jpg"
+          href="/icons/sidekick-16x16.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/Sidekick_logo_reverse_copy.jpg"
+          href="/icons/sidekick-apple-touch-icon-180x180.png"
         />
         <link
           rel="mask-icon"

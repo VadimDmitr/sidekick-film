@@ -1,20 +1,26 @@
 {
-  "name": "Sidekick Film",
+  "name": "Sidekick Media",
   "short_name": "Sidekick",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
+  "scope": "/",
   "icons": [
     {
-      "src": "/Sidekick_logo_reverse_copy.jpg",
-      "sizes": "192x192",
-      "type": "image/jpeg"
+      "src": "/icons/sidekick-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src": "/Sidekick_logo_reverse_copy.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg"
+      "src": "/icons/sidekick-apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/sidekick-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }
