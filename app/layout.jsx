@@ -70,11 +70,11 @@ export default function RootLayout({ children }) {
           sizes="16x16"
           href="/icons/sidekick-16x16.png"
         />
-        {/* Apple/iOS home screen icon - use working logo */}
-        <link rel="apple-touch-icon" href="/Sidekick_logo_reverse_copy.jpg" />
+        {/* Apple/iOS home screen icon - simple S letter */}
+        <link rel="apple-touch-icon" href="/icons/sidekick-icon.svg" />
         <link
           rel="apple-touch-icon-precomposed"
-          href="/Sidekick_logo_reverse_copy.jpg"
+          href="/icons/sidekick-icon.svg"
         />
         <link
           rel="mask-icon"
