@@ -71,10 +71,7 @@ export default function RootLayout({ children }) {
           href="/icons/sidekick-16x16.png"
         />
         {/* Apple/iOS home screen icon - use working logo */}
-        <link
-          rel="apple-touch-icon"
-          href="/Sidekick_logo_reverse_copy.jpg"
-        />
+        <link rel="apple-touch-icon" href="/Sidekick_logo_reverse_copy.jpg" />
         <link
           rel="apple-touch-icon-precomposed"
           href="/Sidekick_logo_reverse_copy.jpg"
