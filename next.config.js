@@ -2,7 +2,7 @@
 const nextConfig = {
   // Enable compression for all responses
   compress: true,
-  
+
   // Image optimization
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -10,13 +10,13 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 year
   },
-  
+
   // Generate ETags for cache validation
   generateEtags: true,
-  
+
   // Optimize production builds
   productionBrowserSourceMaps: false,
-  
+
   // Configure headers for caching
   async headers() {
     return [

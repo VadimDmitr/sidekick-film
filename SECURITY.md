@@ -19,16 +19,17 @@ We will acknowledge receipt within 48 hours and work on a fix.
 ## 📋 Supported Versions
 
 | Package | Version | Support Status | Security Updates |
-|---------|---------|-----------------|-----------------|
-| Next.js | 16.x | ✅ Active | Yes |
-| React | 19.x | ✅ Active | Yes |
-| Node.js | 22.x | ✅ LTS | Yes |
+| ------- | ------- | -------------- | ---------------- |
+| Next.js | 16.x    | ✅ Active      | Yes              |
+| React   | 19.x    | ✅ Active      | Yes              |
+| Node.js | 22.x    | ✅ LTS         | Yes              |
 
 ---
 
 ## 🛡️ Recent Security Updates
 
 ### December 2025
+
 - **CVE-2025-55184 & CVE-2025-67779**: Next.js App Router DoS - Fixed (16.0.7+)
 - **CVE-2025-55183**: Next.js Source Code Exposure - Fixed (16.0.7+)
 - **CVE-2025-66478**: React Server Components Critical - Fixed (19.2.1+)
