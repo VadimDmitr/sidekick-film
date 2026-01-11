@@ -6,7 +6,8 @@ import styles from './videoProjects.module.css';
 
 const VideoComponent = () => {
   const [isClient, setIsClient] = useState(false);
-  const [playing, setPlaying] = useState(Array(8).fill(false));
+  const [playing, setPlaying] = useState({});
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setIsClient(true);
@@ -31,9 +32,20 @@ const VideoComponent = () => {
   }
 
   const handleVideoClick = (index) => {
-    const newPlaying = [...playing];
-    newPlaying[index] = true;
-    setPlaying(newPlaying);
+    try {
+      setPlaying((prev) => ({
+        ...prev,
+        [index]: true,
+      }));
+    } catch (err) {
+      setError(`Error playing video ${index + 1}`);
+      console.error('Video playback error:', err);
+    }
+  };
+
+  const handleVideoError = (index, err) => {
+    console.error(`Error with video ${index}:`, err);
+    setError(`Error loading video ${index + 1}`);
   };
 
   return (
@@ -47,28 +59,40 @@ const VideoComponent = () => {
           className={styles.responsiveImage}
         />
       </div>
+      {error && <div style={{ color: 'red', padding: '1rem' }}>{error}</div>}
       <div className={styles.videosGrid}>
         {videos.map((video, index) => (
           <div
             key={index}
             className={styles.videoItem}
             onClick={() => handleVideoClick(index)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                handleVideoClick(index);
+              }
+            }}
           >
             <ReactPlayer
               className={styles.reactPlayer}
               url={video.url}
               width="100%"
               height="100%"
-              controls={true}
-              light={true}
-              playing={playing[index]}
+              controls
+              light={isClient}
+              playing={playing[index] || false}
               loop={false}
               playbackRate={1.0}
               volume={0.8}
               muted={false}
+              onError={(err) => handleVideoError(index, err)}
               config={{
                 youtube: {
-                  playerVars: { vq: 'highres' },
+                  playerVars: {
+                    vq: 'highres',
+                    autoplay: 1,
+                  },
                 },
               }}
             />
