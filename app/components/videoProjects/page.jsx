@@ -36,7 +36,7 @@ const VideoComponent = () => {
   const handleVideoClick = (index) => {
     // First, remove light mode immediately on touch/click
     setLoadedVideos((prev) => new Set([...prev, index]));
-    
+
     // Then set as active to start playing
     setActiveIndex(index);
     setError(null);
