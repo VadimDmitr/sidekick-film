@@ -34,27 +34,20 @@ const VideoComponent = () => {
   }
 
   const handleVideoClick = (index) => {
-    // Debounce to prevent double clicks
+    // Immediately disable light mode and start playing on first touch
+    setLoadedVideos((prev) => new Set([...prev, index]));
+    setActiveIndex(index);
+    setError(null);
+
+    // Debounce subsequent clicks
     if (clickTimeoutRef.current[index]) {
       return;
     }
 
-    try {
-      // Mark video as loaded (remove light mode)
-      setLoadedVideos((prev) => new Set([...prev, index]));
-      // Stop all other videos and play only the clicked one
-      setActiveIndex(index);
-      setError(null);
-
-      // Set a timeout to prevent rapid clicks on the same video
-      clickTimeoutRef.current[index] = true;
-      setTimeout(() => {
-        clickTimeoutRef.current[index] = false;
-      }, 300);
-    } catch (err) {
-      setError(`Error playing video ${index + 1}`);
-      console.error('Video playback error:', err);
-    }
+    clickTimeoutRef.current[index] = true;
+    setTimeout(() => {
+      clickTimeoutRef.current[index] = false;
+    }, 300);
   };
 
   const handleVideoError = (index, err) => {
@@ -92,7 +85,7 @@ const VideoComponent = () => {
             key={index}
             className={styles.videoItem}
             onClick={() => handleVideoClick(index)}
-            onTouchEnd={() => handleVideoClick(index)}
+            onTouchStart={() => handleVideoClick(index)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
@@ -101,6 +94,7 @@ const VideoComponent = () => {
                 handleVideoClick(index);
               }
             }}
+            style={{ touchAction: 'manipulation' }}
           >
             <ReactPlayer
               className={styles.reactPlayer}
@@ -108,7 +102,7 @@ const VideoComponent = () => {
               width="100%"
               height="100%"
               controls
-              light={!loadedVideos.has(index)}
+              light={false}
               playing={activeIndex === index}
               loop={false}
               playbackRate={1.0}
