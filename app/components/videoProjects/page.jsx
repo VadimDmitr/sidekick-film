@@ -7,6 +7,7 @@ import styles from './videoProjects.module.css';
 const VideoComponent = () => {
   const [isClient, setIsClient] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [loadedVideos, setLoadedVideos] = useState(new Set());
   const [error, setError] = useState(null);
   const clickTimeoutRef = useRef({});
 
@@ -39,6 +40,8 @@ const VideoComponent = () => {
     }
 
     try {
+      // Mark video as loaded (remove light mode)
+      setLoadedVideos((prev) => new Set([...prev, index]));
       // Stop all other videos and play only the clicked one
       setActiveIndex(index);
       setError(null);
@@ -47,7 +50,7 @@ const VideoComponent = () => {
       clickTimeoutRef.current[index] = true;
       setTimeout(() => {
         clickTimeoutRef.current[index] = false;
-      }, 500);
+      }, 300);
     } catch (err) {
       setError(`Error playing video ${index + 1}`);
       console.error('Video playback error:', err);
@@ -89,6 +92,7 @@ const VideoComponent = () => {
             key={index}
             className={styles.videoItem}
             onClick={() => handleVideoClick(index)}
+            onTouchEnd={() => handleVideoClick(index)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
@@ -104,7 +108,7 @@ const VideoComponent = () => {
               width="100%"
               height="100%"
               controls
-              light={isClient}
+              light={!loadedVideos.has(index)}
               playing={activeIndex === index}
               loop={false}
               playbackRate={1.0}
