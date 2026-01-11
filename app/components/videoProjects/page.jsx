@@ -34,12 +34,14 @@ const VideoComponent = () => {
   }
 
   const handleVideoClick = (index) => {
-    // Immediately disable light mode and start playing on first touch
+    // First, remove light mode immediately on touch/click
     setLoadedVideos((prev) => new Set([...prev, index]));
+    
+    // Then set as active to start playing
     setActiveIndex(index);
     setError(null);
 
-    // Debounce subsequent clicks
+    // Debounce to prevent rapid re-clicks
     if (clickTimeoutRef.current[index]) {
       return;
     }
@@ -47,7 +49,19 @@ const VideoComponent = () => {
     clickTimeoutRef.current[index] = true;
     setTimeout(() => {
       clickTimeoutRef.current[index] = false;
-    }, 300);
+    }, 500);
+  };
+
+  const handlePlayerReady = (index) => {
+    // When YouTube iframe is ready, ensure it plays if this is the active video
+    if (activeIndex === index) {
+      // Force play on ready (helps with iOS)
+      setTimeout(() => {
+        if (activeIndex === index) {
+          setActiveIndex(index);
+        }
+      }, 100);
+    }
   };
 
   const handleVideoError = (index, err) => {
@@ -86,6 +100,7 @@ const VideoComponent = () => {
             className={styles.videoItem}
             onClick={() => handleVideoClick(index)}
             onTouchStart={() => handleVideoClick(index)}
+            onPointerDown={() => handleVideoClick(index)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
@@ -94,7 +109,7 @@ const VideoComponent = () => {
                 handleVideoClick(index);
               }
             }}
-            style={{ touchAction: 'manipulation' }}
+            style={{ touchAction: 'manipulation', cursor: 'pointer' }}
           >
             <ReactPlayer
               className={styles.reactPlayer}
@@ -102,7 +117,7 @@ const VideoComponent = () => {
               width="100%"
               height="100%"
               controls
-              light={false}
+              light={!loadedVideos.has(index)}
               playing={activeIndex === index}
               loop={false}
               playbackRate={1.0}
@@ -111,6 +126,7 @@ const VideoComponent = () => {
               onError={(err) => handleVideoError(index, err)}
               onEnded={() => handleVideoEnded()}
               onPlay={() => handlePlayPause(index, true)}
+              onReady={() => handlePlayerReady(index)}
               onBuffer={() => {
                 // Handle buffering if needed
               }}
@@ -122,6 +138,8 @@ const VideoComponent = () => {
                     autoplay: 1,
                     fs: 1,
                     modestbranding: 1,
+                    controls: 1,
+                    playsinline: 1,
                   },
                 },
               }}
