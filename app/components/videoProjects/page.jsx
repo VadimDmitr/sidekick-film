@@ -1,13 +1,14 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ReactPlayer from 'react-player';
 import Image from 'next/image';
 import styles from './videoProjects.module.css';
 
 const VideoComponent = () => {
   const [isClient, setIsClient] = useState(false);
-  const [playing, setPlaying] = useState({});
+  const [activeIndex, setActiveIndex] = useState(null);
   const [error, setError] = useState(null);
+  const clickTimeoutRef = useRef({});
 
   useEffect(() => {
     setIsClient(true);
@@ -32,11 +33,21 @@ const VideoComponent = () => {
   }
 
   const handleVideoClick = (index) => {
+    // Debounce to prevent double clicks
+    if (clickTimeoutRef.current[index]) {
+      return;
+    }
+
     try {
-      setPlaying((prev) => ({
-        ...prev,
-        [index]: true,
-      }));
+      // Stop all other videos and play only the clicked one
+      setActiveIndex(index);
+      setError(null);
+
+      // Set a timeout to prevent rapid clicks on the same video
+      clickTimeoutRef.current[index] = true;
+      setTimeout(() => {
+        clickTimeoutRef.current[index] = false;
+      }, 500);
     } catch (err) {
       setError(`Error playing video ${index + 1}`);
       console.error('Video playback error:', err);
@@ -46,6 +57,18 @@ const VideoComponent = () => {
   const handleVideoError = (index, err) => {
     console.error(`Error with video ${index}:`, err);
     setError(`Error loading video ${index + 1}`);
+  };
+
+  const handleVideoEnded = () => {
+    // Stop video when it ends
+    setActiveIndex(null);
+  };
+
+  const handlePlayPause = (index, isPlaying) => {
+    if (isPlaying && activeIndex !== index) {
+      // If any other video tries to play, stop it
+      setActiveIndex(index);
+    }
   };
 
   return (
@@ -70,6 +93,7 @@ const VideoComponent = () => {
             tabIndex={0}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
                 handleVideoClick(index);
               }
             }}
@@ -81,17 +105,25 @@ const VideoComponent = () => {
               height="100%"
               controls
               light={isClient}
-              playing={playing[index] || false}
+              playing={activeIndex === index}
               loop={false}
               playbackRate={1.0}
               volume={0.8}
               muted={false}
               onError={(err) => handleVideoError(index, err)}
+              onEnded={() => handleVideoEnded()}
+              onPlay={() => handlePlayPause(index, true)}
+              onBuffer={() => {
+                // Handle buffering if needed
+              }}
+              progressInterval={1000}
               config={{
                 youtube: {
                   playerVars: {
                     vq: 'highres',
                     autoplay: 1,
+                    fs: 1,
+                    modestbranding: 1,
                   },
                 },
               }}
