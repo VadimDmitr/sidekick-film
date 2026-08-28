@@ -1,5 +1,5 @@
 import { DM_Sans, Inter, Roboto_Condensed } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import Header from './components/header/Header.client';
 import Footer from './components/footer/Footer.client';
@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
     process.env.NEXT_PUBLIC_SITE_URL ||
     'https://www.sidekickmediausa.com';
   const OG_IMAGE = `${SITE_URL}/og/og-image-1200x630.svg`;
-  const showAnalytics =
-    !!process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ID &&
-    process.env.VERCEL_ENV === 'production';
+  const isProduction =
+    process.env.VERCEL_ENV === 'production' ||
+    process.env.NODE_ENV === 'production';
 
   return (
     <html lang="en">
@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <BackToTopButton />
           <Footer />
-          {showAnalytics && <Analytics />}
+          {isProduction && <Analytics />}
         </div>
       </body>
     </html>
